@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet COGIP - DevOps & Agile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <div class="logo">> Ammar_Yilmaz<span>_</span></div>
+            <div class="nav-actions">
+                <a href="index.html" class="btn-cv"><i class="fas fa-arrow-left"></i> RETOUR À L'ACCUEIL</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" style="margin-top: 100px;">
+        <div class="card">
+            <span class="badge">PROJET D'EXPERTISE (BLOC 2)</span>
+            <h1 style="margin-top: 20px; font-size: 2.5rem;">Gestion de Projet IT Agile & IaC (COGIP)</h1>
+            <p style="color: var(--neon-green); margin-bottom: 40px; font-family: 'Share Tech Mono';">#Terraform #Ansible #Packer #Kubernetes #Scrum</p>
+
+            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Contexte du projet</h3>
+            <p style="margin-bottom: 30px;">
+                La société COGIP devait concevoir et déployer une infrastructure robuste et résiliente pour héberger l'ERP Odoo d'un client (Tesker)[cite: 7]. J'ai piloté ce projet de bout en bout en appliquant la méthodologie Agile (Scrum) afin de garantir une livraison rapide et itérative d'un Proof of Concept (PoC) fonctionnel[cite: 7].
+            </p>
+
+            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Déploiement Infrastructure as Code (IaC)</h3>
+            <ul style="margin-bottom: 30px; list-style: none; color: var(--text-muted);">
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Masterisation :</strong> Création d'images systèmes standardisées (Golden Images) avec HashiCorp Packer pour un déploiement homogène et sécurisé[cite: 21, 22].</li>
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Provisionnement :</strong> Automatisation de la création des machines virtuelles (control-plane et workers) sur VMware vSphere via Terraform[cite: 23, 24].</li>
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Orchestration & Configuration :</strong> Écriture de playbooks Ansible pour déployer automatiquement le cluster Kubernetes (K3s), configurer le réseau (Ingress Traefik), le stockage persistant (NFS) et installer l'ERP Odoo[cite: 24, 26].</li>
+            </ul>
+
+            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Management Agile & Inclusif</h3>
+            <p style="margin-bottom: 30px;">
+                Le projet a été structuré en 3 Sprints avec un suivi rigoureux sur Jira (Kanban, Burndown Chart)[cite: 18, 19, 20]. J'ai également veillé à instaurer un environnement de travail inclusif et multiculturel (aménagement pour le handicap, flexibilité, droit à la déconnexion) afin de favoriser la performance et le bien-être de l'équipe[cite: 16, 17].
+            </p>
+
+            <!-- Remplace le href par le nom exact de ton PDF sur GitHub si tu l'uploades, sinon laisse # -->
+            <a href="BLOC2.pdf" target="_blank" class="btn-primary" style="display: inline-block;">
+                <i class="fas fa-file-pdf"></i> CONSULTER LE LIVRABLE COMPLET
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

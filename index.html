@@ -4,108 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar YILMAZ - Portfolio</title>
+    <!-- Police Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- En-tête / Menu -->
+
+    <!-- Arrière-plan animé (Particules) -->
+    <div id="particles-js"></div>
+
+    <!-- En-tête -->
     <header>
         <nav>
-            <div class="logo">Ammar.Y</div>
+            <div class="logo"><span class="dot"></span> AMMAR_Y</div>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#projets">Projets MSPR</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#propos">À PROPOS</a></li>
+                <li><a href="#competences">COMPÉTENCES</a></li>
+                <li><a href="#certifications">CERTIFICATIONS</a></li>
+                <li><a href="#parcours">PARCOURS</a></li>
+                <li><a href="#projets">PROJETS</a></li>
             </ul>
+            <div class="nav-actions">
+                <!-- Lien vers ton CV PDF (assure-toi que le fichier s'appelle exactement comme ça sur GitHub) -->
+                <a href="Ammar YILMAZ cv.pdf" target="_blank" class="btn-cv">CV</a>
+            </div>
         </nav>
     </header>
 
-    <!-- Section Principale -->
-    <section id="accueil" class="hero">
+    <!-- Section Héro -->
+    <section class="hero">
         <div class="hero-content">
-            <!-- Ta photo de profil -->
-            <img src="IMG_9948.jpg" alt="Ammar YILMAZ" class="profile-pic">
-            <h1>Bonjour, je suis Ammar YILMAZ</h1>
-            <h2>Expert Informatique et Systèmes d'Information</h2>
-            <p>Spécialisé en infrastructure virtualisée, automatisation (IaC) et pilotage de projets IT au sein d'environnements critiques.</p>
-            <a href="#projets" class="btn">Voir mes réalisations</a>
-        </div>
-    </section>
-
-    <!-- Section Expériences -->
-    <section id="experiences" style="background-color: #0d1117;">
-        <h2>Mon Expérience Professionnelle</h2>
-        <div class="projets-grid">
-            <div class="projet-card">
-                <h3>Administrateur CRM & Développeur</h3>
-                <p><strong>ANSSI (Division Coordination Territoriale)</strong><br>Gestion, développement et maintien en condition opérationnelle du CRM de l'organisation. Conception de documentations et accompagnement des utilisateurs dans le cadre de la directive NIS2.</p>
-                <div class="tags">
-                    <span class="tag">Administration SI</span>
-                    <span class="tag">Support Utilisateur</span>
-                </div>
+            <p class="hero-subtitle">INGÉNIEUR RÉSEAUX & SYSTÈMES</p>
+            <h1>Ammar<br><span class="gradient-text">YILMAZ</span></h1>
+            <h2 class="hero-role">Ingénieur Réseaux & Systèmes Junior</h2>
+            <div class="availability">
+                <span class="status-dot"></span> DISPONIBLE EN ÎLE-DE-FRANCE
             </div>
-            <div class="projet-card">
-                <h3>Chef de Projet SI</h3>
-                <p><strong>SGDSN (Bureau de Veille et d'Alerte)</strong><br>Exploitation technique des logiciels et maintien en condition opérationnelle. Gestion de projets internes, intégration d'API et amélioration continue pour le traitement de données critiques.</p>
-                <div class="tags">
-                    <span class="tag">Gestion de Projet</span>
-                    <span class="tag">Exploitation</span>
-                </div>
+            <p class="hero-desc">
+                Actuellement en Mastère Expert Informatique et Systèmes d'Information à l'EPSI. Passionné par l'administration des systèmes, l'infrastructure réseau et la gestion de projets SI. Mon parcours, allant du support technique au pilotage de projets critiques au sein de grandes institutions de l'État (ANSSI, SGDSN), me permet d'avoir une vision globale et opérationnelle de l'IT.
+            </p>
+            <div class="hero-buttons">
+                <!-- Lien vers ton LinkedIn -->
+                <a href="https://www.linkedin.com/in/ammar-yilmaz" target="_blank" class="btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#projets" class="btn-secondary"><i class="fas fa-rocket"></i> Voir mes projets</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="IMG_9948.jpg" alt="Ammar YILMAZ">
             </div>
         </div>
     </section>
 
-    <!-- Section Projets MSPR -->
-    <section id="projets">
-        <h2>Mes Projets d'Expertise (MSPR)</h2>
-        <div class="projets-grid">
-            <!-- Projet 5 -->
-            <div class="projet-card">
-                <h3>Architecture & Cloud Multisite (ATP)</h3>
-                <p>Conception d'une infrastructure virtualisée multisite sous VMware ESXi. Sécurisation et interconnexion réseau mondiale via des clusters pfSense (CARP) et VPN IPsec. Déploiement d'un Active Directory et d'un PRA.</p>
-                <div class="tags">
-                    <span class="tag">VMware ESXi</span>
-                    <span class="tag">pfSense (HA)</span>
-                    <span class="tag">Windows Server</span>
-                    <span class="tag">VPN IPsec</span>
-                </div>
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+        <h2 class="section-title">Technologies & <span class="gradient-text">Outils</span></h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Réseaux & Infrastructure</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i> TCP/IP, DNS, DHCP</li>
+                    <li><i class="fas fa-arrow-right"></i> Administration et configuration réseau</li>
+                    <li><i class="fas fa-arrow-right"></i> Pare-feux & Tunnels IPsec (pfSense)</li>
+                </ul>
             </div>
-            <!-- Projet 2 -->
-            <div class="projet-card">
-                <h3>Infra as Code & Kubernetes (COGIP)</h3>
-                <p>Pilotage de projet en méthode Agile (Scrum). Automatisation complète du déploiement d'un cluster K3s et de l'ERP Odoo en utilisant Packer, Terraform et Ansible pour garantir résilience et évolutivité.</p>
-                <div class="tags">
-                    <span class="tag">Terraform</span>
-                    <span class="tag">Ansible</span>
-                    <span class="tag">Kubernetes</span>
-                    <span class="tag">Scrum</span>
-                </div>
+            <div class="card">
+                <h3>Systèmes & Support</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i> Windows Server & Linux</li>
+                    <li><i class="fas fa-arrow-right"></i> Active Directory</li>
+                    <li><i class="fas fa-arrow-right"></i> VMware ESXi / VirtualBox</li>
+                    <li><i class="fas fa-arrow-right"></i> Support N2/N3 & GLPI</li>
+                </ul>
             </div>
-            <!-- Projet 1 -->
-            <div class="projet-card">
-                <h3>Stratégie SI & Cybersécurité (K-Electronik)</h3>
-                <p>Audit et schéma directeur pour la fusion de SI. Cartographie des processus métiers, analyse rigoureuse des risques (EBIOS/ISO 27005), élaboration d'une PSSI, et définition de PCA/PRA.</p>
-                <div class="tags">
-                    <span class="tag">Gouvernance IT</span>
-                    <span class="tag">ISO 27001</span>
-                    <span class="tag">ITIL v4</span>
-                    <span class="tag">PRA / PCA</span>
-                </div>
+            <div class="card">
+                <h3>Gouvernance & ITSM</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i> Pilotage de projets SI & Jira</li>
+                    <li><i class="fas fa-arrow-right"></i> Analyse & recueil des besoins</li>
+                    <li><i class="fas fa-arrow-right"></i> Cartographie du SI</li>
+                    <li><i class="fas fa-arrow-right"></i> Méthodes Agiles (Scrum)</li>
+                </ul>
             </div>
-            <!-- Projet 3 -->
-            <div class="projet-card">
-                <h3>Big Data & Machine Learning (Elexxion)</h3>
-                <p>Conception d'un système d'intelligence artificielle prédictif. Développement d'un pipeline ETL en Python et modélisation via des algorithmes (XGBoost, Random Forest, Keras) pour anticiper des tendances.</p>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">ETL</span>
-                    <span class="tag">Data Science</span>
-                </div>
+            <div class="card">
+                <h3>DevOps & Data</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-right"></i> Initiation IaC (Terraform, Ansible, Packer)</li>
+                    <li><i class="fas fa-arrow-right"></i> Supervision (Zabbix)</li>
+                    <li><i class="fas fa-arrow-right"></i> ETL & Machine Learning (Python)</li>
+                </ul>
             </div>
         </div>
     </section>
 
+    <!-- Section Certifications -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">Certifications <span class="gradient-text">Obtenues</span></h2>
+        <div class="grid-3">
+            <div class="card cert-card">
+                <span class="badge">DATAIKU</span>
+                <h3>Advanced Designer</h3>
+                <a href="#" class="cert-link">Authentifier <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card cert-card">
+                <span class="badge">DATAIKU</span>
+                <h3>Core Designer</h3>
+                <a href="#" class="cert-link">Authentifier <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card cert-card">
+                <span class="badge">DATAIKU</span>
+                <h3>ML Practitioner</h3>
+                <a href="#" class="cert-link">Authentifier <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card cert-card">
+                <span class="badge">DATAIKU</span>
+                <h3>MLOps Practitioner</h3>
+                <a href="#" class="cert-link">Authentifier <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card cert-card">
+                <span class="badge">LINKEDIN</span>
+                <h3>Gagner en crédibilité</h3>
+                <a href="#" class="cert-link">Authentifier <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours (Expériences) -->
+    <section id="parcours" class="section">
+        <h2 class="section-title">Expériences & <span class="gradient-text">Formations</span></h2>
+        <div class="timeline">
+            <!-- ANSSI -->
+            <div class="timeline-item card">
+                <div class="timeline-date">MARS 2026 — OCT. 2026</div>
+                <h3>Apprenti - Chef de projets SI</h3>
+                <p class="company"><i class="fas fa-building"></i> ANSSI</p>
+                <ul>
+                    <li><i class="fas fa-angle-right"></i> Évolution de l'outil CRM et maintien en condition opérationnelle.</li>
+                    <li><i class="fas fa-angle-right"></i> Support, formation des utilisateurs et gestion de projet.</li>
+                </ul>
+            </div>
+            <!-- SGDSN -->
+            <div class="timeline-item card">
+                <div class="timeline-date">SEPT. 2024 — MARS 2026</div>
+                <h3>Apprenti - Chef de projets SI</h3>
+                <p class="company"><i class="fas fa-building"></i> SGDSN</p>
+                <ul>
+                    <li><i class="fas fa-angle-right"></i> Gestion de projet, analyse & recueil des besoins.</li>
+                    <li><i class="fas fa-angle-right"></i> Tests, validation et cartographie du S.I. existant.</li>
+                </ul>
+            </div>
+            <!-- Institut Pasteur -->
+            <div class="timeline-item card">
+                <div class="timeline-date">MARS 2024 — JUIL. 2024</div>
+                <h3>Technicien projet - Déploiement IT</h3>
+                <p class="company"><i class="fas fa-building"></i> Institut Pasteur</p>
+                <ul>
+                    <li><i class="fas fa-angle-right"></i> Déploiement logiciels, installation et configuration des matériels.</li>
+                </ul>
+            </div>
+            <!-- Formations -->
+            <div class="timeline-item card">
+                <div class="timeline-date">SEPT. 2024 — SEPT. 2026</div>
+                <h3>Mastère - Expert Informatique & Système d'Information</h3>
+                <p class="company"><i class="fas fa-graduation-cap"></i> EPSI Paris</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets (Cliquables) -->
+    <section id="projets" class="section">
+        <h2 class="section-title">Réalisations <span class="gradient-text">Techniques</span></h2>
+        <div class="grid-3">
+            <div class="card project-card">
+                <span class="badge">LAB UNIVERSITAIRE</span>
+                <h3>Infrastructure SI Hybride & Sécurisée (ATP)</h3>
+                <p>Architecture multi-sites ultra-résiliente. Déploiement ESXi, clusters pfSense en HA, supervision Zabbix intégrale et stratégie de bascule PRA.</p>
+                <!-- Remplace le # par le vrai lien vers ton projet GitHub ou PDF -->
+                <a href="#" class="project-link">Consulter l'architecture <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card project-card">
+                <span class="badge">LAB UNIVERSITAIRE</span>
+                <h3>Gestion de Projet IT Agile & IaC (COGIP)</h3>
+                <p>Pilotage Scrum couplé à l'Infrastructure as Code (Terraform), masterisation (Packer), configuration (Ansible) et orchestration (K3s).</p>
+                <a href="#" class="project-link">Consulter le code <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="card project-card">
+                <span class="badge">LAB UNIVERSITAIRE</span>
+                <h3>Gouvernance & Cybersécurité (K-Electronik)</h3>
+                <p>Audit, urbanisation et modélisation stratégique d'un SI. Implémentation des standards EBIOS/ISO 27005, PSSI, et élaboration PRA/PCA.</p>
+                <a href="#" class="project-link">Consulter le dossier <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts pour l'arrière-plan interactif -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

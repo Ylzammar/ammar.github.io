@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet ATP - Infrastructure Hybride</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <div class="logo">> Ammar_Yilmaz<span>_</span></div>
+            <div class="nav-actions">
+                <!-- Bouton de retour vers ton index.html -->
+                <a href="index.html" class="btn-cv"><i class="fas fa-arrow-left"></i> RETOUR À L'ACCUEIL</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section" style="margin-top: 100px;">
+        <div class="card">
+            <span class="badge">PROJET D'EXPERTISE (BLOC 5)</span>
+            <h1 style="margin-top: 20px; font-size: 2.5rem;">Infrastructure SI Hybride Sécurisée (ATP)</h1>
+            <p style="color: var(--neon-green); margin-bottom: 40px; font-family: 'Share Tech Mono';">#VMware #pfSense #IPsec #Zabbix #ActiveDirectory</p>
+
+            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Contexte du projet</h3>
+            <p style="margin-bottom: 30px;">
+                L'Association of Tennis Professionals (ATP) nécessite une unification de son système d'information réparti sur plusieurs continents (Londres, USA, Monaco, Sydney). L'objectif était de centraliser les applications, garantir l'accès aux salariés nomades, et déployer un Plan de Reprise d'Activité (PRA).
+            </p>
+
+            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Architecture Déployée</h3>
+            <ul style="margin-bottom: 30px; list-style: none; color: var(--text-muted);">
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Hyperviseur :</strong> Mise en place de VMware ESXi hébergeant l'ensemble des machines virtuelles (AD, RDS, NAS, pfSense).</li>
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Haute Disponibilité Réseau :</strong> Déploiement de clusters de pare-feux pfSense en HA via le protocole CARP sur chaque site (IP virtuelle partagée).</li>
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Interconnexion :</strong> Maillage réseau mondial sécurisé via des tunnels VPN IPsec entre les différents sites.</li>
+                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Services Core :</strong> Forêt Active Directory multisite avec contrôleurs de domaine principaux (UK) et secondaires (US, Monaco).</li>
+            </ul>
+
+            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Continuité et Mobilité</h3>
+            <p style="margin-bottom: 30px;">
+                Implémentation d'un serveur Nextcloud pour la synchronisation centralisée des fichiers. Pour répondre aux besoins de mobilité, un serveur de bureaux virtuels (RDS) a été configuré, accessible via tunnel OpenVPN. Le site de Monaco a été configuré comme site PRA, avec des sauvegardes automatisées via scripts planifiés (Robocopy).
+            </p>
+
+            <!-- Bouton pour ouvrir le vrai PDF si tu l'as uploadé sur GitHub -->
+            <a href="BLOC5_Concevoir_des_solutions_d'infrastructure_virtualisées_et_cloud.pdf" target="_blank" class="btn-primary" style="display: inline-block;">
+                <i class="fas fa-file-pdf"></i> CONSULTER LE LIVRABLE COMPLET
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

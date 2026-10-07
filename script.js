@@ -1,21 +1,20 @@
-/* Configuration de Particles.js pour l'effet réseau/constellation */
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 60, /* Nombre de points */
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": ["#00f2fe", "#b721ff"] /* Couleurs cyan et violet */
+      "value": ["#00ff88", "#00a8ff"] /* Vert Neon et Bleu Cyber */
     },
     "shape": {
-      "type": "circle",
+      "type": "edge", /* Forme carrée pour un style plus informatique */
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.4,
       "random": false,
     },
     "size": {
@@ -24,14 +23,14 @@ particlesJS("particles-js", {
     },
     "line_linked": {
       "enable": true,
-      "distance": 150, /* Distance pour lier les points */
-      "color": "#00f2fe", /* Couleur de la ligne */
+      "distance": 150,
+      "color": "#00a8ff",
       "opacity": 0.2,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 2, /* Vitesse de déplacement */
+      "speed": 1.5,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -44,19 +43,15 @@ particlesJS("particles-js", {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab" /* Les lignes se connectent à la souris */
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
+        "mode": "grab"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 200,
+        "distance": 150,
         "line_linked": {
-          "opacity": 0.6
+          "opacity": 0.5
         }
       }
     }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar YILMAZ - Portfolio</title>
-    <!-- Nous ajouterons le style CSS à l'étape suivante -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +14,8 @@
             <div class="logo">Ammar.Y</div>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#projets">Projets MSPR</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -25,19 +24,86 @@
     <!-- Section Principale -->
     <section id="accueil" class="hero">
         <div class="hero-content">
+            <!-- Ta photo de profil -->
+            <img src="IMG_9948.jpg" alt="Ammar YILMAZ" class="profile-pic">
             <h1>Bonjour, je suis Ammar YILMAZ</h1>
             <h2>Expert Informatique et Systèmes d'Information</h2>
-            <p>Spécialisé en infrastructure, automatisation et gestion de projet IT.</p>
-            <a href="#contact" class="btn">Me contacter</a>
+            <p>Spécialisé en infrastructure virtualisée, automatisation (IaC) et pilotage de projets IT au sein d'environnements critiques.</p>
+            <a href="#projets" class="btn">Voir mes réalisations</a>
         </div>
     </section>
 
-    <!-- Section Projets (On la remplira plus tard) -->
-    <section id="projets">
-        <h2>Mes Projets Réalisés</h2>
+    <!-- Section Expériences -->
+    <section id="experiences" style="background-color: #0d1117;">
+        <h2>Mon Expérience Professionnelle</h2>
         <div class="projets-grid">
-            <!-- Emplacement pour tes projets (Kubernetes, Terraform, SuiteCRM, etc.) -->
-            <p>En cours de construction...</p>
+            <div class="projet-card">
+                <h3>Administrateur CRM & Développeur</h3>
+                <p><strong>ANSSI (Division Coordination Territoriale)</strong><br>Gestion, développement et maintien en condition opérationnelle du CRM de l'organisation. Conception de documentations et accompagnement des utilisateurs dans le cadre de la directive NIS2.</p>
+                <div class="tags">
+                    <span class="tag">Administration SI</span>
+                    <span class="tag">Support Utilisateur</span>
+                </div>
+            </div>
+            <div class="projet-card">
+                <h3>Chef de Projet SI</h3>
+                <p><strong>SGDSN (Bureau de Veille et d'Alerte)</strong><br>Exploitation technique des logiciels et maintien en condition opérationnelle. Gestion de projets internes, intégration d'API et amélioration continue pour le traitement de données critiques.</p>
+                <div class="tags">
+                    <span class="tag">Gestion de Projet</span>
+                    <span class="tag">Exploitation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets MSPR -->
+    <section id="projets">
+        <h2>Mes Projets d'Expertise (MSPR)</h2>
+        <div class="projets-grid">
+            <!-- Projet 5 -->
+            <div class="projet-card">
+                <h3>Architecture & Cloud Multisite (ATP)</h3>
+                <p>Conception d'une infrastructure virtualisée multisite sous VMware ESXi. Sécurisation et interconnexion réseau mondiale via des clusters pfSense (CARP) et VPN IPsec. Déploiement d'un Active Directory et d'un PRA.</p>
+                <div class="tags">
+                    <span class="tag">VMware ESXi</span>
+                    <span class="tag">pfSense (HA)</span>
+                    <span class="tag">Windows Server</span>
+                    <span class="tag">VPN IPsec</span>
+                </div>
+            </div>
+            <!-- Projet 2 -->
+            <div class="projet-card">
+                <h3>Infra as Code & Kubernetes (COGIP)</h3>
+                <p>Pilotage de projet en méthode Agile (Scrum). Automatisation complète du déploiement d'un cluster K3s et de l'ERP Odoo en utilisant Packer, Terraform et Ansible pour garantir résilience et évolutivité.</p>
+                <div class="tags">
+                    <span class="tag">Terraform</span>
+                    <span class="tag">Ansible</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Scrum</span>
+                </div>
+            </div>
+            <!-- Projet 1 -->
+            <div class="projet-card">
+                <h3>Stratégie SI & Cybersécurité (K-Electronik)</h3>
+                <p>Audit et schéma directeur pour la fusion de SI. Cartographie des processus métiers, analyse rigoureuse des risques (EBIOS/ISO 27005), élaboration d'une PSSI, et définition de PCA/PRA.</p>
+                <div class="tags">
+                    <span class="tag">Gouvernance IT</span>
+                    <span class="tag">ISO 27001</span>
+                    <span class="tag">ITIL v4</span>
+                    <span class="tag">PRA / PCA</span>
+                </div>
+            </div>
+            <!-- Projet 3 -->
+            <div class="projet-card">
+                <h3>Big Data & Machine Learning (Elexxion)</h3>
+                <p>Conception d'un système d'intelligence artificielle prédictif. Développement d'un pipeline ETL en Python et modélisation via des algorithmes (XGBoost, Random Forest, Keras) pour anticiper des tendances.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">ETL</span>
+                    <span class="tag">Data Science</span>
+                </div>
+            </div>
         </div>
     </section>
 

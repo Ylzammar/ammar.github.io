@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap');
 
 :root {
-    --bg-main: #06090f; /* Bleu très très sombre */
-    --bg-card: #0d141f; /* Bleu sombre pour les cartes */
+    --bg-main: #06090f;
+    --bg-card: #0d141f;
     --text-main: #e2e8f0;
     --text-muted: #94a3b8;
-    --neon-green: #00ff88; /* Couleur cyber IT */
+    --neon-green: #00ff88;
     --cyber-blue: #00a8ff;
     --border-color: rgba(0, 255, 136, 0.15);
 }
@@ -24,8 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* Polices IT / Terminal */
-h1, h2, h3, .logo, .badge, .btn-cv, .action-link, .terminal-title, .command {
+h1, h2, h3, .logo, .badge, .btn-cv, .action-link, .terminal-title, .command, .cert-id {
     font-family: 'Share Tech Mono', monospace;
 }
 
@@ -51,7 +50,6 @@ h1, h2, h3, .logo, .badge, .btn-cv, .action-link, .terminal-title, .command {
     background: var(--bg-main);
 }
 
-/* Header & Nav */
 header {
     position: fixed;
     top: 0;
@@ -78,7 +76,6 @@ nav {
 
 .logo span {
     color: var(--neon-green);
-    animation: blink 1s infinite;
 }
 
 nav ul {
@@ -105,6 +102,7 @@ nav ul li a:hover {
     padding: 8px 20px;
     text-decoration: none;
     transition: 0.3s;
+    border-radius: 4px;
 }
 
 .btn-cv:hover {
@@ -113,7 +111,7 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
 }
 
-/* Hero Section (Fausse fenêtre de terminal) */
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -185,6 +183,7 @@ nav ul li a:hover {
 .hero-desc {
     color: var(--text-muted);
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .btn-primary {
@@ -195,6 +194,7 @@ nav ul li a:hover {
     font-family: 'Share Tech Mono', monospace;
     font-weight: bold;
     transition: 0.3s;
+    border-radius: 4px;
 }
 
 .btn-primary:hover {
@@ -218,7 +218,7 @@ nav ul li a:hover {
     filter: grayscale(20%) contrast(110%);
 }
 
-/* Sections & Grilles */
+/* Grilles Générales */
 .section {
     max-width: 1200px;
     margin: auto;
@@ -237,11 +237,18 @@ nav ul li a:hover {
     gap: 30px;
 }
 
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Cartes Standards */
 .card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     padding: 30px;
-    position: relative;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
@@ -251,15 +258,57 @@ nav ul li a:hover {
     box-shadow: 0 10px 20px rgba(0, 255, 136, 0.05);
 }
 
+/* Profil & Ambitions */
+.icon-ambition {
+    font-size: 2rem;
+    color: var(--cyber-blue);
+    margin-bottom: 20px;
+}
+
+.ambition-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.ambition-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Technologies & Outils (Skills) */
+.skills-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.skills-card ul {
+    list-style: none;
+}
+
+.skills-card ul li {
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.skills-card ul li i {
+    color: var(--cyber-blue);
+    margin-right: 10px;
+}
+
+/* Certifications */
 .card-top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.cert-icon {
-    color: var(--cyber-blue);
-    font-size: 1.5rem;
+.cert-id {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
 }
 
 .badge {
@@ -268,20 +317,61 @@ nav ul li a:hover {
     padding: 4px 10px;
     font-size: 0.8rem;
     border: 1px solid var(--cyber-blue);
+    border-radius: 4px;
 }
 
-.card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: var(--text-main);
+/* Parcours (Timeline) */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.card p {
+.timeline-item {
+    padding: 25px 30px;
+    border-left: 4px solid var(--neon-green);
+    border-radius: 0 8px 8px 0;
+}
+
+.timeline-date {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.85rem;
     color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
 }
 
+.timeline-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.company {
+    color: var(--cyber-blue);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.timeline-item ul {
+    list-style: none;
+}
+
+.timeline-item ul li {
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.timeline-item ul li i {
+    color: var(--neon-green);
+    margin-right: 10px;
+}
+
+/* Liens d'action */
 .action-link {
     color: var(--neon-green);
     text-decoration: none;
@@ -299,6 +389,8 @@ nav ul li a:hover {
     padding: 10px 15px;
     width: 100%;
     text-align: center;
+    border-radius: 4px;
+    margin-top: 15px;
 }
 
 .btn-projet:hover {

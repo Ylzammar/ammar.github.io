@@ -1,9 +1,113 @@
-/* --- Nouveaux Boutons (Style Pilule) --- */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg-main: #06090f;
+    --bg-card: #0d141f;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --neon-green: #00ff88;
+    --cyber-blue: #00a8ff;
+    --border-color: rgba(0, 255, 136, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo, .badge, .terminal-title, .command, .cert-id {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.highlight {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--bg-main);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(6, 9, 15, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+.logo span {
+    color: var(--neon-green);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--neon-green);
+}
+
+/* Nouveaux Boutons Style Pilule */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
 .btn-pill {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 24px;
+    padding: 10px 22px;
     border-radius: 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -40,118 +144,106 @@
     font-size: 1.1rem;
 }
 
-/* --- Section Contact (Initialiser l'intégration) --- */
-.contact-section {
-    text-align: center;
-    padding: 100px 20px;
-    max-width: 800px;
-    margin: 50px auto 0;
-}
-
-.giant-text {
-    font-size: 4.5rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, #8a2be2, #ff1493);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.1;
-}
-
-.contact-desc {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-}
-
-.contact-links {
+/* Hero Section */
+.hero {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 120px auto 80px;
+    padding: 0 20px;
 }
 
-.cv-download-wrapper {
-    margin-bottom: 50px;
+.hero-content {
+    flex: 1;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 40px;
 }
 
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 60px 20px;
-    border-top: 1px solid var(--border-color);
-    background-color: rgba(0, 0, 0, 0.3);
+.terminal-header {
+    background: #1e293b;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
-footer h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #ffffff;
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
 }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
 
-footer p {
+.terminal-title {
+    margin-left: 15px;
     color: var(--text-muted);
     font-size: 0.9rem;
-    margin-bottom: 20px;
 }
 
-/* Badges Statut */
-.badges {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
+.terminal-body {
+    padding: 30px;
 }
 
-.badge-item {
-    display: inline-flex;
-    border-radius: 4px;
-    overflow: hidden;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 600;
+.command {
+    color: var(--cyber-blue);
+    margin-bottom: 15px;
 }
 
-.badge-left {
-    background: #444;
-    color: #fff;
-    padding: 5px 8px;
-}
-
-.badge-right {
-    padding: 5px 8px;
-    color: #fff;
-}
-
-.bg-green { background: #00d26a; }
-.bg-blue { background: #00a8ff; }
-
-.footer-meta {
-    color: #555;
-    font-size: 0.85rem;
+.hero h1 {
+    font-size: 4.5rem;
+    line-height: 1;
     margin-bottom: 10px;
 }
 
-.privacy-link {
-    color: #777;
-    text-decoration: none;
-    font-size: 0.85rem;
-    border-bottom: 1px solid #777;
-    transition: 0.3s;
+.hero-role {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
 }
 
-.privacy-link:hover {
-    color: #fff;
-    border-bottom-color: #fff;
+.status {
+    color: var(--neon-green);
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 25px;
 }
 
-/* Responsive pour le texte géant */
-@media (max-width: 768px) {
-    .giant-text {
-        font-size: 3rem;
-    }
+.hero-desc {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    text-align: justify;
 }
+
+.hero-image {
+    flex: 0.8;
+}
+
+.cyber-frame {
+    border: 2px solid var(--cyber-blue);
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 168, 255, 0.15);
+}
+
+.cyber-frame img {
+    width: 100%;
+    display: block;
+    filter: grayscale(20%) contrast(110%);
+}
+
+/* Grilles Générales */
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color:

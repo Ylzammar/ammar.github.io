@@ -116,3 +116,64 @@ section h2 {
     margin-bottom: 40px;
     text-align: center;
 }
+/* Grille des projets et expériences */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Style des cartes */
+.projet-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.projet-card h3 {
+    color: #58a6ff;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.projet-card p {
+    font-size: 0.95rem;
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+/* Tags de compétences */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #238636;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Image de profil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}

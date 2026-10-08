@@ -25,35 +25,62 @@
         <div class="card" style="border-left: 4px solid var(--orange);">
             <span class="badge badge-tech" style="color: var(--orange); border-color: rgba(249, 115, 22, 0.3);">DEVOPS & INFRASTRUCTURE AS CODE</span>
             <h1 style="font-size: 2.4rem; margin: 15px 0 10px;">Gestion Agile & Déploiement IaC (Projet COGIP)</h1>
-            <p style="color: var(--orange); font-family: 'Share Tech Mono'; margin-bottom: 30px;">#Terraform #Ansible #Packer #Kubernetes_K3s #Scrum #Jira</p>
+            <p style="color: var(--orange); font-family: 'Share Tech Mono'; margin-bottom: 30px;">#Terraform #Ansible #Packer #Kubernetes_K3s #vSphere #Scrum #Jira</p>
 
             <h3 style="color: var(--cyan); margin-bottom: 12px;">> 1. Présentation du Projet</h3>
             <p style="margin-bottom: 25px;">
-                Conception et automatisation d'une infrastructure cloud native pour l'hébergement d'un ERP Odoo client. Le projet a été conduit selon la méthodologie Scrum (3 Sprints) avec une chaîne complète d'automatisation d'infrastructure (IaC).
+                Conception, automatisation et sécurisation d'une infrastructure cloud native pour l'hébergement d'un ERP Odoo client. Le projet a été mené selon la méthode Agile Scrum (3 Sprints) en s'appuyant sur une chaîne complète d'Infrastructure as Code (IaC) pour garantir la reproductibilité et la haute disponibilité.
             </p>
 
-            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 2. Chaîne d'Automatisation (Pipeline IaC)</h3>
-            <div class="diagram-container">
-                <div style="background: rgba(255,255,255,0.02); border: 1px dashed var(--border-color); border-radius: 8px; padding: 40px; color: var(--text-muted);">
-                    <i class="fas fa-cubes" style="font-size: 3rem; color: var(--orange); margin-bottom: 15px;"></i>
-                    <p><strong>HashiCorp Packer</strong> (Golden Images) → <strong>Terraform</strong> (VMs vSphere) → <strong>Ansible</strong> (K3s, NFS, Odoo).</p>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;"><em>Architecture entièrement reproductible et versionnée sur Git.</em></p>
-                </div>
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 2. Déploiement Automatisé (Terraform @ VMware vSphere)</h3>
+            <div class="diagram-container" style="background: rgba(0, 0, 0, 0.4); border: 1px solid var(--border-color); border-radius: 10px; padding: 25px; text-align: center; margin: 25px 0 35px;">
+                <p style="color: var(--orange); font-family: 'Share Tech Mono'; font-size: 0.95rem; margin-bottom: 20px;">
+                    <i class="fas fa-desktop"></i> TERRAFORM APPLY COMPLETE & PROVISIONNEMENT DES VM SUR VSPHERE
+                </p>
+                
+                <a href="schema-cogip.png" target="_blank" title="Cliquez pour agrandir">
+                    <img src="schema-cogip.png" alt="Preuve provisionnement Terraform vSphere" style="width: 100%; max-width: 950px; height: auto; border-radius: 8px; border: 1px solid rgba(249, 115, 22, 0.25); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); display: block; margin: 0 auto; transition: transform 0.3s ease;">
+                </a>
+                
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">
+                    <i class="fas fa-search-plus" style="color: var(--cyan);"></i> Cliquez sur la capture d'écran pour l'afficher en haute résolution.
+                </p>
             </div>
 
-            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 3. Méthodologie & Réalisations</h3>
-            <ul style="list-style: none; margin-bottom: 30px;">
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Masterisation :</strong> Création d'images Linux durcies et standardisées avec Packer.</li>
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Provisionnement :</strong> Déploiement automatique des nœuds maîtres et workers via Terraform.</li>
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Orchestration :</strong> Configuration d'un cluster Kubernetes K3s avec ingress Traefik et stockage persistant.</li>
-                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Pilotage Scrum :</strong> Organisation des sprints, stand-ups et burndown charts sur Jira.</li>
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 3. Méthodologie & Réalisations Techniques</h3>
+            <ul style="list-style: none; margin-bottom: 35px;">
+                <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                    <i class="fas fa-check" style="color: var(--emerald); margin-top: 4px;"></i>
+                    <div><strong>Masterisation (Packer) :</strong> Création automatisée d'images virtuelles Linux Debian durcies et standardisées (Golden Images) prêtes pour l'hébergement cloud.</div>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                    <i class="fas fa-check" style="color: var(--emerald); margin-top: 4px;"></i>
+                    <div><strong>Provisionnement d'Infrastructure (Terraform) :</strong> Déploiement automatisé sur VMware vSphere des nœuds du cluster (control plane <code>cp-0</code>, stockage <code>nfs</code>, workers <code>worker-1</code> et <code>worker-2</code>) avec allocation dynamique des IP et ressources.</div>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                    <i class="fas fa-check" style="color: var(--emerald); margin-top: 4px;"></i>
+                    <div><strong>Configuration & Orchestration (Ansible & K3s) :</strong> Déploiement de playbooks Ansible pour installer le cluster Kubernetes K3s, configurer les montages persistants NFS et déployer l'application ERP Odoo avec reverse proxy Traefik.</div>
+                </li>
+                <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                    <i class="fas fa-check" style="color: var(--emerald); margin-top: 4px;"></i>
+                    <div><strong>Pilotage Scrum (Jira) :</strong> Organisation des rituels agiles (Sprint Planning, Daily Stand-ups, Sprint Reviews, Retrospectives) et suivi de la vélocité via des burndown charts.</div>
+                </li>
             </ul>
 
-            <a href="BLOC2.pdf" target="_blank" class="btn-pill btn-white">
-                <i class="fas fa-file-pdf"></i> Consulter le livrable complet (Bloc 2)
-            </a>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="BLOC2.pdf" target="_blank" class="btn-pill btn-white">
+                    <i class="fas fa-file-pdf"></i> Consulter le livrable complet (Bloc 2)
+                </a>
+                <a href="schema-cogip.png" target="_blank" class="btn-pill btn-dark">
+                    <i class="fas fa-image" style="color: var(--orange);"></i> Voir la capture HD
+                </a>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <p class="copyright">© 2026 Ammar YILMAZ • Tous droits réservés.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>

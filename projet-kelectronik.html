@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet K-Electronik - Cybersécurité</title>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Projet K-Electronik - Gouvernance SI & Cybersécurité</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,39 +14,42 @@
 
     <header>
         <nav>
-            <div class="logo">> Ammar_Yilmaz<span>_</span></div>
+            <a href="index.html" class="logo">> Ammar_Yilmaz<span>_</span></a>
             <div class="nav-actions">
-                <a href="index.html" class="btn-cv"><i class="fas fa-arrow-left"></i> RETOUR À L'ACCUEIL</a>
+                <a href="index.html#projets" class="btn-cv"><i class="fas fa-arrow-left"></i> RETOUR AUX PROJETS</a>
             </div>
         </nav>
     </header>
 
     <section class="section" style="margin-top: 100px;">
-        <div class="card">
-            <span class="badge">PROJET D'EXPERTISE (BLOC 1)</span>
-            <h1 style="margin-top: 20px; font-size: 2.5rem;">Cybersécurité & Stratégie SI (K-Electronik)</h1>
-            <p style="color: var(--neon-green); margin-bottom: 40px; font-family: 'Share Tech Mono';">#GouvernanceIT #ISO27001 #EBIOS #ITILv4 #PRA_PCA</p>
+        <div class="card" style="border-left: 4px solid var(--purple);">
+            <span class="badge badge-tech" style="color: var(--purple); border-color: rgba(168, 85, 247, 0.3);">STRATÉGIE SI & CYBERSÉCURITÉ</span>
+            <h1 style="font-size: 2.4rem; margin: 15px 0 10px;">Architecture Stratégique & Analyse des Risques (K-Electronik)</h1>
+            <p style="color: var(--purple); font-family: 'Share Tech Mono'; margin-bottom: 30px;">#ISO_27001 #EBIOS #Urbanisation_SI #BPMN #Green_IT #ITILv4</p>
 
-            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Contexte du projet</h3>
-            <p style="margin-bottom: 30px;">
-                Suite au rachat d'une filiale à Madrid, la PME K-Electronik devait intégrer et unifier ses systèmes d'information tout en résorbant une forte dette technique[cite: 46, 53]. Ma mission consistait à auditer l'existant, identifier les vulnérabilités et proposer un schéma directeur SI aligné sur la stratégie de l'entreprise[cite: 46, 53].
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 1. Problématique Métier</h3>
+            <p style="margin-bottom: 25px;">
+                Dans le cadre de l'acquisition d'une filiale internationale, la société K-Electronik devait unifier ses systèmes d'information, résorber une importante dette technique et formaliser une gouvernance de sécurité conforme aux standards industriels.
             </p>
 
-            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Cartographie & Analyse des Risques</h3>
-            <ul style="margin-bottom: 30px; list-style: none; color: var(--text-muted);">
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Urbanisation du SI :</strong> Cartographie complète sur 4 niveaux (Métier, Fonctionnel, Applicatif, Infrastructure) pour cibler la dette technique et préparer la convergence France-Espagne[cite: 61, 62, 63, 64].</li>
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Modélisation BPMN :</strong> Réingénierie des processus métiers, notamment pour l'harmonisation de la gestion des campagnes marketing[cite: 65, 66].</li>
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Analyse EBIOS / ISO 27005 :</strong> Identification de 6 risques majeurs (dont cyberattaque et perte de données) face à un système de sauvegarde obsolète[cite: 68, 69].</li>
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 2. Cartographie & Modélisation BPMN</h3>
+            <div class="diagram-container">
+                <div style="background: rgba(255,255,255,0.02); border: 1px dashed var(--border-color); border-radius: 8px; padding: 40px; color: var(--text-muted);">
+                    <i class="fas fa-sitemap" style="font-size: 3rem; color: var(--purple); margin-bottom: 15px;"></i>
+                    <p>Urbanisation du SI sur 4 niveaux (Métier, Fonctionnel, Applicatif, Technique) et modélisation des flux BPMN 2.0.</p>
+                </div>
+            </div>
+
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 3. Gouvernance & Sécurité Déployées</h3>
+            <ul style="list-style: none; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Analyse EBIOS / ISO 27005 :</strong> Évaluation des scénarios d'attaque et des biens essentiels de l'entreprise.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Élaboration PSSI :</strong> Définition des règles de sécurité (contrôle d'accès, sauvegardes, durcissement des postes).</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Plan de Continuité :</strong> Objectifs RTO et RPO stricts pour minimiser l'impact opérationnel en cas d'incident.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Démarche Green IT :</strong> Mesure d'empreinte environnementale selon les recommandations ISO 26000.</li>
             </ul>
 
-            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Continuité et Gouvernance</h3>
-            <p style="margin-bottom: 30px;">
-                Pour sécuriser l'entreprise, j'ai élaboré une Politique de Sécurité des Systèmes d'Information (PSSI) et défini les principes directeurs d'un Plan de Continuité (PCA) et de Reprise d'Activité (PRA) avec des RTO/RPO stricts[cite: 70, 72, 73, 74]. En parallèle, j'ai conçu un tableau de bord de performance basé sur ITIL v4 et défini une feuille de route Green IT (ISO 26000)[cite: 75, 78, 89, 90].
-            </p>
-
-            <!-- Remplace le href par le nom exact de ton PDF sur GitHub si tu l'uploades, sinon laisse # -->
-            <a href="BLOC1.pdf" target="_blank" class="btn-primary" style="display: inline-block;">
-                <i class="fas fa-file-pdf"></i> CONSULTER LE LIVRABLE COMPLET
+            <a href="BLOC1.pdf" target="_blank" class="btn-pill btn-white">
+                <i class="fas fa-file-pdf"></i> Consulter le livrable complet (Bloc 1)
             </a>
         </div>
     </section>

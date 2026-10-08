@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet ATP - Infrastructure Hybride</title>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Projet ATP - Infrastructure SI Hybride</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,41 +14,46 @@
 
     <header>
         <nav>
-            <div class="logo">> Ammar_Yilmaz<span>_</span></div>
+            <a href="index.html" class="logo">> Ammar_Yilmaz<span>_</span></a>
             <div class="nav-actions">
-                <!-- Bouton de retour vers ton index.html -->
-                <a href="index.html" class="btn-cv"><i class="fas fa-arrow-left"></i> RETOUR À L'ACCUEIL</a>
+                <a href="index.html#projets" class="btn-cv"><i class="fas fa-arrow-left"></i> RETOUR AUX PROJETS</a>
             </div>
         </nav>
     </header>
 
     <section class="section" style="margin-top: 100px;">
-        <div class="card">
-            <span class="badge">PROJET D'EXPERTISE (BLOC 5)</span>
-            <h1 style="margin-top: 20px; font-size: 2.5rem;">Infrastructure SI Hybride Sécurisée (ATP)</h1>
-            <p style="color: var(--neon-green); margin-bottom: 40px; font-family: 'Share Tech Mono';">#VMware #pfSense #IPsec #Zabbix #ActiveDirectory</p>
+        <div class="card" style="border-left: 4px solid var(--cyan);">
+            <span class="badge badge-tech">ARCHITECTURE & INFRASTRUCTURE RÉSEAU</span>
+            <h1 style="font-size: 2.4rem; margin: 15px 0 10px;">Infrastructure SI Hybride Sécurisée & Haute Disponibilité</h1>
+            <p style="color: var(--cyan); font-family: 'Share Tech Mono'; margin-bottom: 30px;">#VMware_vSphere #pfSense_HA_CARP #IPsec #Zabbix #PRA_PCA</p>
 
-            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Contexte du projet</h3>
-            <p style="margin-bottom: 30px;">
-                L'Association of Tennis Professionals (ATP) nécessite une unification de son système d'information réparti sur plusieurs continents (Londres, USA, Monaco, Sydney). L'objectif était de centraliser les applications, garantir l'accès aux salariés nomades, et déployer un Plan de Reprise d'Activité (PRA).
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 1. Contexte & Enjeux</h3>
+            <p style="margin-bottom: 25px;">
+                Mise en place d'une infrastructure d'entreprise hautement disponible et sécurisée répartie sur deux sites interconnectés, avec réplication des services critiques, stratégie de continuité d'activité (PCA/PRA) et supervision proactive.
             </p>
 
-            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Architecture Déployée</h3>
-            <ul style="margin-bottom: 30px; list-style: none; color: var(--text-muted);">
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Hyperviseur :</strong> Mise en place de VMware ESXi hébergeant l'ensemble des machines virtuelles (AD, RDS, NAS, pfSense).</li>
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Haute Disponibilité Réseau :</strong> Déploiement de clusters de pare-feux pfSense en HA via le protocole CARP sur chaque site (IP virtuelle partagée).</li>
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Interconnexion :</strong> Maillage réseau mondial sécurisé via des tunnels VPN IPsec entre les différents sites.</li>
-                <li><i class="fas fa-check" style="color: var(--neon-green);"></i> <strong>Services Core :</strong> Forêt Active Directory multisite avec contrôleurs de domaine principaux (UK) et secondaires (US, Monaco).</li>
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 2. Schéma d'Architecture Réseau</h3>
+            <div class="diagram-container">
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">
+                    <i class="fas fa-network-wired" style="color: var(--cyan);"></i> <strong>Interconnexion Multi-sites & Grappe Haute Disponibilité</strong>
+                </p>
+                <div style="background: rgba(255,255,255,0.02); border: 1px dashed var(--border-color); border-radius: 8px; padding: 40px; color: var(--text-muted);">
+                    <i class="fas fa-project-diagram" style="font-size: 3rem; color: var(--cyan); margin-bottom: 15px;"></i>
+                    <p>Déploiement d'un cluster pfSense en synchronisation d'état (pfsync / CARP) avec bascule IP automatique (VIP).</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;"><em>(Tu peux glisser ton image "schema-atp.png" dans ton repo pour l'afficher directement ici)</em></p>
+                </div>
+            </div>
+
+            <h3 style="color: var(--cyan); margin-bottom: 12px;">> 3. Composants Techniques Déployés</h3>
+            <ul style="list-style: none; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Cœur de réseau :</strong> Pare-feux pfSense en cluster CARP, segmentation par VLANs (DMZ, Admin, Prod, VPN).</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Virtualisation :</strong> Hyperviseurs VMware ESXi avec vCenter pour la gestion centralisée des machines virtuelles.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Supervision :</strong> Serveur Zabbix avec agents déployés, sondes SNMP et alerting en temps réel.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--emerald); margin-right: 10px;"></i> <strong>Continuité :</strong> Réplication de données inter-sites et procédure de bascule PRA testée.</li>
             </ul>
 
-            <h3 style="color: var(--cyber-blue); margin-bottom: 10px;">> Continuité et Mobilité</h3>
-            <p style="margin-bottom: 30px;">
-                Implémentation d'un serveur Nextcloud pour la synchronisation centralisée des fichiers. Pour répondre aux besoins de mobilité, un serveur de bureaux virtuels (RDS) a été configuré, accessible via tunnel OpenVPN. Le site de Monaco a été configuré comme site PRA, avec des sauvegardes automatisées via scripts planifiés (Robocopy).
-            </p>
-
-            <!-- Bouton pour ouvrir le vrai PDF si tu l'as uploadé sur GitHub -->
-            <a href="BLOC5_Concevoir_des_solutions_d'infrastructure_virtualisées_et_cloud.pdf" target="_blank" class="btn-primary" style="display: inline-block;">
-                <i class="fas fa-file-pdf"></i> CONSULTER LE LIVRABLE COMPLET
+            <a href="ATP.pdf" target="_blank" class="btn-pill btn-white">
+                <i class="fas fa-file-pdf"></i> Consulter le livrable technique
             </a>
         </div>
     </section>

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https: https://img.shields.io;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; img-src 'self' data: https: https://img.shields.io;">
+    <title>Ammar YILMAZ - Ingénieur Réseaux & Systèmes</title>
     
-    <title>Ammar YILMAZ — Ingénieur Réseaux & Systèmes</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,406 +16,289 @@
 
     <header>
         <nav>
-            <a href="#accueil" class="logo">
-                <span class="logo-dot"></span> Ammar<span class="logo-accent">.Y</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">> Ammar_Yilmaz<span>_</span></div>
+            <ul>
+                <li><a href="#propos">01. À PROPOS</a></li>
+                <li><a href="#competences">02. COMPÉTENCES</a></li>
+                <li><a href="#certifications">03. CERTIFICATIONS</a></li>
+                <li><a href="#parcours">04. PARCOURS</a></li>
+                <li><a href="#projets">05. PROJETS</a></li>
             </ul>
-            <a href="Ammar YILMAZ cv.pdf" download class="btn-nav">
-                <i class="fas fa-download"></i> Mon CV
-            </a>
+            <div class="nav-actions">
+                <a href="Ammar YILMAZ cv.pdf" download class="btn-cv"><i class="fas fa-download"></i> TÉLÉCHARGER CV</a>
+            </div>
         </nav>
     </header>
 
-    <section id="accueil" class="hero-section">
-        <div class="hero-container">
-            <div class="hero-text">
-                <div class="badge-status">
-                    <span class="status-pulse"></span>
-                    DISPONIBLE EN ÎLE-DE-FRANCE
-                </div>
-                <h1 class="hero-title">
-                    Ammar <span class="gradient-text">YILMAZ</span>
-                </h1>
-                <h2 class="hero-subtitle">Ingénieur Réseaux & Systèmes Junior</h2>
-                <p class="hero-description">
-                    Diplômé d’un Mastère Expert en Informatique et Systèmes d’Information, je suis passionné par l’administration des systèmes, la virtualisation et le cloud. Mon parcours, mêlant chefferie de projet SI en alternance (ANSSI, SGDSN) et déploiements techniques en laboratoires universitaires, me permet d’apporter une vision globale et opérationnelle de l’IT.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#projets" class="btn btn-primary">
-                        <i class="fas fa-folder-open"></i> Voir mes projets
-                    </a>
-                    <a href="Ammar YILMAZ cv.pdf" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-eye"></i> Afficher le CV
-                    </a>
-                </div>
-
-                <div class="hero-socials">
-                    <a href="https://www.linkedin.com/in/ammar-yilmaz" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/Ylzammar" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:yilmazammar78@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+    <section class="hero">
+        <div class="hero-left">
+            <div class="status-badge">
+                <span class="status-dot"></span> DISPONIBLE EN ÎLE-DE-FRANCE
             </div>
+            <h1 class="hero-title">Ammar <span class="highlight">YILMAZ</span></h1>
+            <h2 class="hero-subtitle">Ingénieur Réseaux & Systèmes Junior</h2>
+            <p class="hero-text">
+                Diplômé d’un Mastère Expert en Informatique et Systèmes d’Information, je suis passionné par l’administration des systèmes, la virtualisation et le cloud. Mon parcours, mêlant chefferie de projet SI en alternance (ANSSI, SGDSN) et déploiements techniques en laboratoires universitaires, me permet d’apporter une vision globale et opérationnelle de l’IT.
+            </p>
+            <div class="hero-actions">
+                <a href="Ammar YILMAZ cv.pdf" target="_blank" class="btn-pill btn-white">
+                    <i class="fas fa-eye"></i> Afficher le CV
+                </a>
+                <a href="https://www.linkedin.com/in/ammar-yilmaz" target="_blank" class="btn-pill btn-dark">
+                    <i class="fab fa-linkedin" style="color: #00a8ff;"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Ylzammar" target="_blank" class="btn-pill btn-dark">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
 
-            <div class="hero-visual">
-                <div class="photo-card">
-                    <img src="IMG_9948.jpg" alt="Ammar YILMAZ" class="profile-photo">
-                    <div class="floating-tag">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Mastère EPSI Paris</span>
-                    </div>
-                </div>
+        <div class="hero-right">
+            <div class="photo-card">
+                <img src="IMG_9948.jpg" alt="Ammar YILMAZ" class="photo-img">
+                <div class="photo-tag">Ammar YILMAZ • Expert SI</div>
             </div>
         </div>
     </section>
 
-    <section id="a-propos" class="section">
+    <section id="propos" class="section">
         <div class="section-header">
-            <span class="section-tag">À PROPOS</span>
-            <h2 class="section-title">Profil & Ambitions</h2>
-            <p class="section-desc">Ce qui m’anime au quotidien dans l'ingénierie des systèmes et réseaux.</p>
+            <span class="section-num">01.</span>
+            <h2>Mon Profil & <span class="highlight">Mes Ambitions</span></h2>
         </div>
-
         <div class="grid-3">
-            <div class="card about-card">
-                <div class="card-icon blue"><i class="fas fa-server"></i></div>
+            <div class="card card-clean">
+                <div class="card-icon"><i class="fas fa-server"></i></div>
                 <h3>Infrastructures Hybrides</h3>
-                <p>Concevoir des architectures fiables et sécurisées représente pour moi un véritable défi technique. J’interviens sur la virtualisation on-premise (VMware ESXi) comme sur des environnements Cloud.</p>
+                <p>Concevoir des architectures résilientes et fiables constitue le cœur de mon engagement. J'interviens sur des déploiements virtualisés on-premise et cloud interconnectés.</p>
             </div>
-            <div class="card about-card">
-                <div class="card-icon cyan"><i class="fas fa-terminal"></i></div>
+            <div class="card card-clean">
+                <div class="card-icon"><i class="fas fa-terminal"></i></div>
                 <h3>Automatisation & IaC</h3>
-                <p>Curieux d’optimiser la résilience et la scalabilité des parcs informatiques, j’utilise l’Infrastructure as Code (Terraform, Ansible, Packer) pour standardiser et automatiser les déploiements.</p>
+                <p>Automatiser pour fiabiliser et gagner en agilité : j'utilise Terraform, Ansible et Packer afin de standardiser les environnements et accélérer les déploiements.</p>
             </div>
-            <div class="card about-card">
-                <div class="card-icon purple"><i class="fas fa-shield-halved"></i></div>
-                <h3>Réseaux & Sécurité</h3>
-                <p>Très attentif à la cybersécurité et à la haute disponibilité, je mets en œuvre des architectures réseau compartimentées (VLANs, VPN IPsec, clusters pfSense HA) et supervisées via Zabbix.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experiences" class="section bg-alt">
-        <div class="section-header">
-            <span class="section-tag">PARCOURS</span>
-            <h2 class="section-title">Expériences & Formations</h2>
-            <p class="section-desc">Mon évolution professionnelle au sein d'institutions publiques et d'entreprises.</p>
-        </div>
-
-        <div class="timeline-container">
-            <div class="timeline-block">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content card">
-                    <div class="timeline-date">MARS 2026 — OCT. 2026</div>
-                    <h3>Apprenti Chef de Projets SI</h3>
-                    <h4 class="company-name"><i class="fas fa-shield-alt"></i> ANSSI — Agence nationale de la sécurité des systèmes d'information</h4>
-                    <p>Évolution et administration de l’outil CRM. Gestion de projet IT, maintien en condition opérationnelle, support et accompagnement des utilisateurs.</p>
-                </div>
-            </div>
-
-            <div class="timeline-block">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content card">
-                    <div class="timeline-date">SEPT. 2024 — MARS 2026</div>
-                    <h3>Apprenti Chef de Projets SI</h3>
-                    <h4 class="company-name"><i class="fas fa-landmark"></i> SGDSN — Secrétariat Général de la Défense et de la Sécurité Nationale</h4>
-                    <p>Analyse et recueil des besoins, cartographie du système d’information existant, tests, validation et suivi de projets pour le Bureau de Veille et d'Alerte.</p>
-                </div>
-            </div>
-
-            <div class="timeline-block">
-                <div class="timeline-dot special-dot"></div>
-                <div class="timeline-content card special-card">
-                    <div class="timeline-date">SEPT. 2024 — SEPT. 2026</div>
-                    <h3>Mastère Expert Informatique & Système d'Information</h3>
-                    <h4 class="company-name"><i class="fas fa-graduation-cap"></i> EPSI Paris — Option Infrastructure</h4>
-                    <p>Titre RNCP niveau 7 (Bac+5). Spécialisation en architecture cloud, virtualisation, cybersécurité et gouvernance IT.</p>
-                </div>
-            </div>
-
-            <div class="timeline-block">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content card">
-                    <div class="timeline-date">MARS 2024 — JUIL. 2024</div>
-                    <h3>Technicien Projet — Déploiement Informatique</h3>
-                    <h4 class="company-name"><i class="fas fa-flask"></i> Institut Pasteur, Paris</h4>
-                    <p>Déploiement logiciel, préparation, installation et configuration des équipements matériels, recette et tests de bon fonctionnement.</p>
-                </div>
-            </div>
-
-            <div class="timeline-block">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content card">
-                    <div class="timeline-date">FÉVR. 2024 — MARS 2024</div>
-                    <h3>Technicien Support de Proximité</h3>
-                    <h4 class="company-name"><i class="fas fa-bolt"></i> EDF Renouvelables, Nanterre</h4>
-                    <p>Maintien, entretien et dépannage du parc informatique et bureautique. Assistance technique N1 aux collaborateurs.</p>
-                </div>
-            </div>
-
-            <div class="timeline-block">
-                <div class="timeline-dot special-dot"></div>
-                <div class="timeline-content card">
-                    <div class="timeline-date">2016 — 2023</div>
-                    <h3>Parcours Académique Initial</h3>
-                    <h4 class="company-name"><i class="fas fa-university"></i> Universités & Écoles Techniques</h4>
-                    <ul class="mini-list">
-                        <li><strong>Licence Informatique générale :</strong> CNAM / Université Paris Nanterre (2023)</li>
-                        <li><strong>Technicien Supérieur Systèmes & Réseaux :</strong> WebForce3 Paris (2021-2022)</li>
-                        <li><strong>Bac Pro Systèmes Numériques (SN) :</strong> Lycée Jean Moulin (2016-2019)</li>
-                    </ul>
-                </div>
+            <div class="card card-clean">
+                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Sécurité & Supervision</h3>
+                <p>Sensibilisé aux exigences d'environnements critiques (SGDSN, ANSSI), je veille à la segmentation réseau (VLAN, IPsec, pare-feux) et au monitoring complet avec Zabbix.</p>
             </div>
         </div>
     </section>
 
     <section id="competences" class="section">
         <div class="section-header">
-            <span class="section-tag">COMPÉTENCES</span>
-            <h2 class="section-title">Mon Expertise Technique</h2>
-            <p class="section-desc">Un aperçu des technologies, systèmes et outils que j'utilise au quotidien.</p>
+            <span class="section-num">02.</span>
+            <h2>Technologies & <span class="highlight">Outils</span></h2>
         </div>
-
-        <div class="skills-grid">
-            <div class="skill-category-card card">
-                <div class="skill-cat-header">
-                    <div class="cat-icon"><i class="fas fa-server"></i></div>
-                    <h3>Systèmes & Virtualisation</h3>
-                </div>
-                <div class="skill-pills">
-                    <span class="skill-pill"><i class="devicon-windows8-original"></i> Windows Server</span>
-                    <span class="skill-pill"><i class="devicon-linux-plain"></i> Linux (Debian/Ubuntu)</span>
-                    <span class="skill-pill"><i class="fas fa-network-wired"></i> Active Directory</span>
-                    <span class="skill-pill"><i class="fas fa-cloud"></i> VMware ESXi</span>
-                    <span class="skill-pill"><i class="devicon-docker-plain colored"></i> K3s / Conteneurs</span>
-                    <span class="skill-pill"><i class="fas fa-desktop"></i> VirtualBox</span>
-                    <span class="skill-pill"><i class="fas fa-users-cog"></i> GPO / DNS / DHCP</span>
-                </div>
+        <div class="grid-2">
+            <div class="card">
+                <div class="skill-category"><i class="fas fa-cloud"></i> Compute & Cloud</div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-chevron-right"></i> Windows Server & Active Directory</li>
+                    <li><i class="fas fa-chevron-right"></i> VMware ESXi / vSphere & Hyper-V</li>
+                    <li><i class="fas fa-chevron-right"></i> Microsoft 365, Entra ID & Microsoft Azure</li>
+                    <li><i class="fas fa-chevron-right"></i> Linux (Debian, Ubuntu Server)</li>
+                </ul>
             </div>
 
-            <div class="skill-category-card card">
-                <div class="skill-cat-header">
-                    <div class="cat-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Réseaux & Sécurité</h3>
-                </div>
-                <div class="skill-pills">
-                    <span class="skill-pill"><i class="fas fa-shield-virus"></i> pfSense (HA CARP)</span>
-                    <span class="skill-pill"><i class="fas fa-lock"></i> VPN (IPsec / OpenVPN)</span>
-                    <span class="skill-pill"><i class="fas fa-sitemap"></i> VLANs & Routage</span>
-                    <span class="skill-pill"><i class="fas fa-ethernet"></i> TCP/IP, NAT, PAT</span>
-                    <span class="skill-pill"><i class="fas fa-fire-extinguisher"></i> Filtrage Pare-feu</span>
-                    <span class="skill-pill"><i class="fas fa-file-contract"></i> Norme ISO 27001 / PSSI</span>
-                    <span class="skill-pill"><i class="fas fa-user-shield"></i> Méthode EBIOS</span>
-                </div>
+            <div class="card">
+                <div class="skill-category"><i class="fas fa-network-wired"></i> Réseaux & SecOps</div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-chevron-right"></i> Pare-feux & Haute Disponibilité pfSense (CARP)</li>
+                    <li><i class="fas fa-chevron-right"></i> Routage, VLANs & Tunnels IPsec / OpenVPN</li>
+                    <li><i class="fas fa-chevron-right"></i> Protocoles fondamentaux (TCP/IP, DNS, DHCP)</li>
+                    <li><i class="fas fa-chevron-right"></i> Politiques de sécurité & durcissement</li>
+                </ul>
             </div>
 
-            <div class="skill-category-card card">
-                <div class="skill-cat-header">
-                    <div class="cat-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud & Services IT</h3>
-                </div>
-                <div class="skill-pills">
-                    <span class="skill-pill"><i class="devicon-azure-plain colored"></i> Microsoft Azure</span>
-                    <span class="skill-pill"><i class="fab fa-microsoft"></i> Microsoft 365 / Entra ID</span>
-                    <span class="skill-pill"><i class="fas fa-database"></i> SuiteCRM</span>
-                    <span class="skill-pill"><i class="fas fa-cloud-download-alt"></i> Nextcloud</span>
-                    <span class="skill-pill"><i class="fas fa-display"></i> Bureaux Virtuels (RDS)</span>
-                    <span class="skill-pill"><i class="fas fa-file-excel"></i> Power Query / Data</span>
-                </div>
+            <div class="card">
+                <div class="skill-category"><i class="fas fa-tasks"></i> Gouvernance & ITSM</div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-chevron-right"></i> Pilotage Agile (Scrum, Kanban, Jira)</li>
+                    <li><i class="fas fa-chevron-right"></i> Gestion des incidents & parc (GLPI)</li>
+                    <li><i class="fas fa-chevron-right"></i> Cartographie du SI & Modélisation BPMN</li>
+                    <li><i class="fas fa-chevron-right"></i> Analyse des risques EBIOS & Plan PCA/PRA</li>
+                </ul>
             </div>
 
-            <div class="skill-category-card card">
-                <div class="skill-cat-header">
-                    <div class="cat-icon"><i class="fas fa-cogs"></i></div>
-                    <h3>Automatisation, Outils & Gestion</h3>
-                </div>
-                <div class="skill-pills">
-                    <span class="skill-pill"><i class="devicon-terraform-plain colored"></i> Terraform (IaC)</span>
-                    <span class="skill-pill"><i class="devicon-ansible-plain colored"></i> Ansible</span>
-                    <span class="skill-pill"><i class="fas fa-box-archive"></i> HashiCorp Packer</span>
-                    <span class="skill-pill"><i class="fas fa-chart-line"></i> Supervision Zabbix</span>
-                    <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git & GitHub Actions</span>
-                    <span class="skill-pill"><i class="devicon-jira-plain colored"></i> Jira & Méthode Scrum</span>
-                    <span class="skill-pill"><i class="fas fa-headset"></i> Support N2/N3 & GLPI</span>
-                </div>
+            <div class="card">
+                <div class="skill-category"><i class="fas fa-code-branch"></i> DevOps & Supervision</div>
+                <ul class="skill-list">
+                    <li><i class="fas fa-chevron-right"></i> Infrastructure as Code (Terraform, Packer)</li>
+                    <li><i class="fas fa-chevron-right"></i> Gestion de configuration (Ansible)</li>
+                    <li><i class="fas fa-chevron-right"></i> Conteneurisation & Orchestration (K3s, Docker)</li>
+                    <li><i class="fas fa-chevron-right"></i> Monitoring & Alerting (Zabbix)</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="section bg-alt">
+    <section id="certifications" class="section">
         <div class="section-header">
-            <span class="section-tag">CERTIFICATIONS</span>
-            <h2 class="section-title">Certifications Obtenues</h2>
-            <p class="section-desc">Accréditations validées auprès d'organismes certificateurs reconnus.</p>
+            <span class="section-num">03.</span>
+            <h2>Certifications <span class="highlight">Obtenues</span></h2>
         </div>
-
         <div class="grid-4">
             <div class="card cert-card">
-                <span class="cert-badge">DATAIKU</span>
+                <span class="badge badge-tech">DATAIKU</span>
                 <h3>Advanced Designer</h3>
-                <p class="cert-id">ID : 94sm7gvtvc6u</p>
-                <a href="https://verify.skilljar.com/c/94sm7gvtwc6u" target="_blank" class="cert-link">
-                    Authentifier <i class="fas fa-arrow-up-right-from-square"></i>
-                </a>
+                <p class="cert-code">ID: 94sm7gvtvc6u</p>
+                <a href="https://verify.skilljar.com/c/94sm7gvtwc6u" target="_blank" class="cert-link">Authentifier <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="card cert-card">
-                <span class="cert-badge">DATAIKU</span>
+                <span class="badge badge-tech">DATAIKU</span>
                 <h3>Core Designer</h3>
-                <p class="cert-id">ID : ug258akduaio</p>
-                <a href="https://verify.skilljar.com/c/ug258akduaio" target="_blank" class="cert-link">
-                    Authentifier <i class="fas fa-arrow-up-right-from-square"></i>
-                </a>
+                <p class="cert-code">ID: ug258akduaio</p>
+                <a href="https://verify.skilljar.com/c/ug258akduaio" target="_blank" class="cert-link">Authentifier <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="card cert-card">
-                <span class="cert-badge">DATAIKU</span>
+                <span class="badge badge-tech">DATAIKU</span>
                 <h3>ML Practitioner</h3>
-                <p class="cert-id">ID : a2shyvhu9rxb</p>
-                <a href="https://verify.skilljar.com/c/a2shyvhu9rxb" target="_blank" class="cert-link">
-                    Authentifier <i class="fas fa-arrow-up-right-from-square"></i>
-                </a>
+                <p class="cert-code">ID: a2shyvhu9rxb</p>
+                <a href="https://verify.skilljar.com/c/a2shyvhu9rxb" target="_blank" class="cert-link">Authentifier <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="card cert-card">
-                <span class="cert-badge">DATAIKU</span>
+                <span class="badge badge-tech">DATAIKU</span>
                 <h3>MLOps Practitioner</h3>
-                <p class="cert-id">ID : u6u6qnhppu9w</p>
-                <a href="https://verify.skilljar.com/c/u6u6qnhppu9w" target="_blank" class="cert-link">
-                    Authentifier <i class="fas fa-arrow-up-right-from-square"></i>
-                </a>
+                <p class="cert-code">ID: u6u6qnhppu9w</p>
+                <a href="https://verify.skilljar.com/c/u6u6qnhppu9w" target="_blank" class="cert-link">Authentifier <i class="fas fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="section">
+        <div class="section-header">
+            <span class="section-num">04.</span>
+            <h2>Expériences & <span class="highlight">Formations</span></h2>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-box exp-pro">
+                <div class="box-header">
+                    <span class="date-tag">MARS 2026 — OCT. 2026</span>
+                    <span class="type-tag pro">EXPÉRIENCE</span>
+                </div>
+                <h3>Apprenti - Chef de projets SI</h3>
+                <h4 class="company"><i class="fas fa-building"></i> ANSSI (Agence nationale de la sécurité des systèmes d'information)</h4>
+                <p>Évolution et administration de l'outil CRM, maintien en condition opérationnelle, support et formation des utilisateurs dans un cadre sécurisé.</p>
+            </div>
+
+            <div class="timeline-box exp-pro">
+                <div class="box-header">
+                    <span class="date-tag">SEPT. 2024 — MARS 2026</span>
+                    <span class="type-tag pro">EXPÉRIENCE</span>
+                </div>
+                <h3>Apprenti - Chef de projets SI</h3>
+                <h4 class="company"><i class="fas fa-building"></i> SGDSN (Secrétariat Général de la Défense et de la Sécurité Nationale)</h4>
+                <p>Analyse et recueil des besoins, cartographie du SI existant, qualification logicielle, rédaction de spécifications et suivi de projets d'exploitation.</p>
+            </div>
+
+            <div class="timeline-box exp-edu">
+                <div class="box-header">
+                    <span class="date-tag">SEPT. 2024 — SEPT. 2026</span>
+                    <span class="type-tag edu">FORMATION</span>
+                </div>
+                <h3>Mastère Expert en Informatique et Systèmes d'Information</h3>
+                <h4 class="company edu-company"><i class="fas fa-graduation-cap"></i> EPSI Paris (École d'ingénierie informatique)</h4>
+                <p>Spécialisation Infrastructures, Virtualisation, Cloud, Cybersécurité et Gouvernance des Systèmes d'Information (Titre RNCP Niveau 7).</p>
+            </div>
+
+            <div class="timeline-box exp-pro">
+                <div class="box-header">
+                    <span class="date-tag">MARS 2024 — JUIL. 2024</span>
+                    <span class="type-tag pro">EXPÉRIENCE</span>
+                </div>
+                <h3>Technicien projet - Déploiement informatique</h3>
+                <h4 class="company"><i class="fas fa-building"></i> Institut Pasteur, Paris</h4>
+                <p>Déploiement logiciel, masterisation, installation et configuration des postes utilisateurs et équipements réseau, exécution des tests de bon fonctionnement.</p>
+            </div>
+
+            <div class="timeline-box exp-pro">
+                <div class="box-header">
+                    <span class="date-tag">FÉVR. 2024 — MARS 2024</span>
+                    <span class="type-tag pro">EXPÉRIENCE</span>
+                </div>
+                <h3>Technicien support de proximité</h3>
+                <h4 class="company"><i class="fas fa-building"></i> EDF renouvelables, Nanterre</h4>
+                <p>Assistance technique et support de niveau 1 auprès des collaborateurs, maintenance et dépannage matériel et logiciel.</p>
+            </div>
+
+            <div class="timeline-box exp-edu">
+                <div class="box-header">
+                    <span class="date-tag">PARCOURS INITIAL</span>
+                    <span class="type-tag edu">DIPLÔMES ANTÉRIEURS</span>
+                </div>
+                <h4 class="company edu-company"><i class="fas fa-graduation-cap"></i> Enseignement supérieur & technique</h4>
+                <ul class="edu-sublist">
+                    <li><strong>Licence Informatique générale :</strong> Université Paris Nanterre / CNAM (2023)</li>
+                    <li><strong>Technicien Supérieur Système et Réseau :</strong> WebForce3 (2021 — 2022)</li>
+                    <li><strong>Bac Pro Systèmes Numériques (SN) :</strong> Lycée Jean Moulin (2016 — 2019)</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="projets" class="section">
         <div class="section-header">
-            <span class="section-tag">PROJETS</span>
-            <h2 class="section-title">Mes Réalisations d'Expertise</h2>
-            <p class="section-desc">Découvrez les architectures et solutions d'infrastructure que j'ai conçues.</p>
+            <span class="section-num">05.</span>
+            <h2>Réalisations <span class="highlight">Techniques</span></h2>
         </div>
-
         <div class="grid-3">
             <div class="card project-card">
-                <span class="project-tag">LAB UNIVERSITAIRE</span>
+                <span class="badge badge-tech">INFRA & CLOUD</span>
                 <h3>Infrastructure Hybride Sécurisée (ATP)</h3>
-                <p class="project-desc">
-                    Architecture multisite résiliente sous VMware ESXi. Interconnexion réseau mondiale via tunnels VPN IPsec, clusters de pare-feux pfSense en haute disponibilité (CARP) et plan de reprise d'activité.
-                </p>
-                <div class="project-techs">
-                    <span>VMware</span><span>pfSense</span><span>IPsec</span><span>Zabbix</span>
-                </div>
-                <a href="projet-atp.html" class="btn btn-outline">
-                    Consulter l'architecture <i class="fas fa-arrow-right"></i>
-                </a>
+                <p>Architecture multi-sites VMware ESXi, clusters de pare-feux pfSense en haute disponibilité (CARP), tunnels IPsec et Plan de Reprise d'Activité.</p>
+                <a href="projet-atp.html" class="btn-action">Consulter l'architecture <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="card project-card">
-                <span class="project-tag">AGILE & IAC</span>
-                <h3>Projet IT Agile & Cloud (COGIP)</h3>
-                <p class="project-desc">
-                    Pilotage de projet Scrum et chaîne DevOps complète. Automatisation du provisionnement (Terraform), masterisation d’images (Packer) et déploiement d’un cluster K3s avec ERP Odoo via Ansible.
-                </p>
-                <div class="project-techs">
-                    <span>Terraform</span><span>Ansible</span><span>K3s</span><span>Scrum</span>
-                </div>
-                <a href="projet-cogip.html" class="btn btn-outline">
-                    Consulter l'architecture <i class="fas fa-arrow-right"></i>
-                </a>
+                <span class="badge badge-tech">DEVOPS & IAC</span>
+                <h3>Gestion Agile & Chaîne IaC (COGIP)</h3>
+                <p>Déploiement automatisé d'un cluster Kubernetes K3s et de l'ERP Odoo via HashiCorp Packer, Terraform et Ansible sous méthode Scrum.</p>
+                <a href="projet-cogip.html" class="btn-action">Consulter l'architecture <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="card project-card">
-                <span class="project-tag">GOUVERNANCE & CYBER</span>
-                <h3>Cybersécurité & Gouvernance SI</h3>
-                <p class="project-desc">
-                    Audit et schéma directeur suite à une fusion. Cartographie complète du SI, analyse de risques EBIOS / ISO 27005, élaboration d'une PSSI, définition des RTO/RPO et plans de continuité (PCA/PRA).
-                </p>
-                <div class="project-techs">
-                    <span>EBIOS</span><span>ISO 27001</span><span>BPMN</span><span>PRA/PCA</span>
-                </div>
-                <a href="projet-kelectronik.html" class="btn btn-outline">
-                    Consulter le dossier <i class="fas fa-arrow-right"></i>
-                </a>
+                <span class="badge badge-tech">GOUVERNANCE & PSSI</span>
+                <h3>Stratégie SI & Cyber (K-Electronik)</h3>
+                <p>Audit d'intégration, cartographie des processus métiers, analyse de risques EBIOS / ISO 27005 et définition des politiques PSSI et PCA/PRA.</p>
+                <a href="projet-kelectronik.html" class="btn-action">Consulter l'architecture <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section bg-alt">
-        <div class="section-header">
-            <span class="section-tag">CONTACT</span>
-            <h2 class="section-title">Restons en contact</h2>
-            <p class="section-desc">Un projet en tête ou une opportunité professionnelle ? N'hésitez pas à me contacter via l'un de ces canaux.</p>
-        </div>
+    <section class="contact-section">
+        <h2 class="contact-title">Initialiser l'intégration<span class="highlight">.</span></h2>
+        <p class="contact-desc">
+            Disponible pour échanger sur mes projets ou de futures opportunités techniques.
+        </p>
 
-        <div class="contact-grid">
-            <div class="card contact-card">
-                <div class="contact-icon blue"><i class="fas fa-envelope"></i></div>
-                <h3>Email</h3>
-                <p>yilmazammar78@gmail.com</p>
-                <a href="mailto:yilmazammar78@gmail.com" class="contact-action">
-                    Envoyer un email <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="card contact-card">
-                <div class="contact-icon cyan"><i class="fab fa-linkedin-in"></i></div>
-                <h3>LinkedIn</h3>
-                <p>Ammar YILMAZ</p>
-                <a href="https://www.linkedin.com/in/ammar-yilmaz" target="_blank" class="contact-action">
-                    Visiter le profil <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="card contact-card">
-                <div class="contact-icon purple"><i class="fas fa-location-dot"></i></div>
-                <h3>Localisation</h3>
-                <p>Île-de-France, France</p>
-                <span class="contact-status">Mobilité régionale & Permis B</span>
-            </div>
-        </div>
-
-        <div class="contact-cv-box">
-            <p>Vous souhaitez conserver mon profil pour vos recrutements ?</p>
-            <a href="Ammar YILMAZ cv.pdf" download class="btn btn-primary btn-lg">
-                <i class="fas fa-file-arrow-down"></i> Télécharger mon CV complet (PDF)
+        <div class="contact-buttons">
+            <a href="mailto:yilmazammar78@gmail.com" class="btn-pill btn-dark">
+                <i class="fas fa-envelope" style="color: #00f2fe;"></i> Me contacter par mail
+            </a>
+            <a href="https://www.linkedin.com/in/ammar-yilmaz" target="_blank" class="btn-pill btn-dark">
+                <i class="fab fa-linkedin" style="color: #00a8ff;"></i> Profil LinkedIn
+            </a>
+            <a href="Ammar YILMAZ cv.pdf" download class="btn-pill btn-white">
+                <i class="fas fa-download"></i> Télécharger le CV (PDF)
             </a>
         </div>
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <span class="logo-dot"></span> Ammar YILMAZ
-                </div>
-                <p>© 2026 Tous droits réservés.</p>
-            </div>
-
-            <div class="badges-row">
-                <img src="https://img.shields.io/badge/Deploy-GitHub_Pages-22c55e?style=flat-square&logo=github&logoColor=white" alt="Deploy GitHub Pages">
-                <img src="https://img.shields.io/badge/Security-Hardened-3b82f6?style=flat-square" alt="Security Hardened">
-                <img src="https://img.shields.io/badge/Uptime-99.9%25-22c55e?style=flat-square" alt="Uptime">
-            </div>
-
-            <div class="footer-bottom">
-                <p class="security-meta">
-                    Site durci — CSP, HSTS, 
-                    <a href=".well-known/security.txt" target="_blank" class="security-link">security.txt</a>
-                </p>
-                <a href="#" class="privacy-link">Confidentialité & cookies</a>
-            </div>
+        <p class="copyright">© 2026 Ammar YILMAZ • Tous droits réservés.</p>
+        
+        <div class="badges-row">
+            <img src="https://img.shields.io/badge/Deploy-GitHub_Pages-27ae60?style=flat-square&logo=github&logoColor=white" alt="Deploy">
+            <img src="https://img.shields.io/badge/Security-Hardened-00a8ff?style=flat-square" alt="Security">
+            <img src="https://img.shields.io/badge/Uptime-99.9%25-00ff88?style=flat-square" alt="Uptime">
         </div>
+
+        <p class="footer-links">
+            Site durci — CSP, HSTS, 
+            <a href=".well-known/security.txt" target="_blank" class="sec-link">security.txt</a>
+            • <a href="#" class="cookie-link">Confidentialité & cookies</a>
+        </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

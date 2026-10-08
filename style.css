@@ -2,7 +2,7 @@
 
 :root {
     /* Palette Executive Cloud & Cyber */
-    --bg-main: #04070d; 
+    --bg-main: #02050a; /* Noir très profond / Bleu abyssal */
     --text-main: #f1f5f9;
     --text-muted: #94a3b8;
     
@@ -16,7 +16,7 @@
     --orange: #f97316;
     
     --border-color: rgba(255, 255, 255, 0.06);
-    --glass-bg: rgba(10, 15, 26, 0.55);
+    --glass-bg: rgba(7, 12, 22, 0.55);
 }
 
 * {
@@ -26,14 +26,16 @@
     scroll-behavior: smooth;
 }
 
+/* FOND FUTURISTE - CYBER INFRA */
 body {
     background-color: var(--bg-main);
-    /* Grille type Blueprint Architecture */
+    /* Superposition : Halo central + Grille holographique */
     background-image: 
-        linear-gradient(rgba(0, 242, 254, 0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 242, 254, 0.025) 1px, transparent 1px);
-    background-size: 40px 40px;
-    background-position: center top;
+        radial-gradient(circle at 50% 0%, rgba(0, 242, 254, 0.15) 0%, transparent 60%),
+        linear-gradient(rgba(0, 242, 254, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 242, 254, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+    background-position: center top, center center, center center;
     background-attachment: fixed;
     color: var(--text-main);
     font-family: 'Inter', sans-serif;
@@ -41,15 +43,46 @@ body {
     overflow-x: hidden;
 }
 
-/* Désactivation des particules pour privilégier la grille architecturale */
-#particles-js { display: none !important; }
+/* EFFET DE SCANNER "DATA FLUX" ANIMÉ */
+body::after {
+    content: "";
+    position: fixed;
+    top: -150px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 242, 254, 0.08), rgba(0, 242, 254, 0.2));
+    border-bottom: 1px solid rgba(0, 242, 254, 0.5);
+    z-index: -1; /* Reste derrière le texte mais au-dessus du fond */
+    pointer-events: none;
+    animation: cyber-scan 10s linear infinite;
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1);
+}
+
+@keyframes cyber-scan {
+    0% { top: -150px; opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { top: 100vh; opacity: 0; }
+}
+
+/* RÉACTIVATION DES PARTICULES (NŒUDS RÉSEAU) */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: transparent;
+}
 
 h1, h2, h3, h4, .logo, .badge, .btn-cv, .sec-link, .date-tag, .type-tag, .cert-code, .photo-tag {
     font-family: 'Share Tech Mono', monospace;
 }
 
-.highlight { color: var(--cyan); text-shadow: 0 0 15px rgba(0, 242, 254, 0.3); }
-.highlight-purple { color: var(--purple); text-shadow: 0 0 15px rgba(168, 85, 247, 0.3); }
+.highlight { color: var(--cyan); text-shadow: 0 0 15px rgba(0, 242, 254, 0.4); }
+.highlight-purple { color: var(--purple); text-shadow: 0 0 15px rgba(168, 85, 247, 0.4); }
 
 /* Couleurs des icônes */
 .icon-home { color: var(--cyan); }
@@ -74,7 +107,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(4, 7, 13, 0.6);
+    background: rgba(2, 5, 10, 0.6);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
@@ -98,7 +131,7 @@ nav {
     text-decoration: none;
     letter-spacing: 0.5px;
 }
-.logo span { color: var(--cyan); }
+.logo span { color: var(--cyan); text-shadow: 0 0 10px var(--cyan); }
 
 /* Menu Hamburger */
 .menu-toggle {
@@ -238,7 +271,7 @@ nav {
     background: var(--cyan);
     color: #000;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.4);
 }
 .btn-dark {
     background: rgba(255, 255, 255, 0.03);
@@ -249,7 +282,7 @@ nav {
     background: rgba(0, 242, 254, 0.05);
     border-color: var(--cyan);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.2);
 }
 
 /* Photo Glassmorphism */
@@ -262,13 +295,13 @@ nav {
     border: 1px solid var(--border-color);
     padding: 12px;
     border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
     transition: all 0.4s ease;
 }
 .photo-card:hover {
     border-color: var(--cyan);
     transform: translateY(-6px);
-    box-shadow: 0 20px 50px rgba(0, 242, 254, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 242, 254, 0.2);
 }
 .photo-img {
     width: 100%;
@@ -303,7 +336,7 @@ nav {
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 
-/* Base des Cartes (Effet Verre) */
+/* Base des Cartes (Effet Verre Dépoli Cyber) */
 .card {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
@@ -312,11 +345,12 @@ nav {
     border-radius: 10px;
     padding: 26px;
     transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 .card:hover {
     border-color: var(--cyan);
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 242, 254, 0.15);
 }
 .card-icon { font-size: 2rem; margin-bottom: 15px; text-shadow: 0 0 15px currentColor; }
 .card h3 { font-size: 1.2rem; margin-bottom: 10px; color: #fff; }
@@ -352,18 +386,19 @@ nav {
     border-radius: 8px;
     padding: 24px;
     transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 .exp-pro { border-left: 4px solid var(--cyan); }
 .exp-pro:hover {
     border-color: var(--cyan);
     transform: translateX(5px);
-    box-shadow: -5px 10px 30px rgba(0, 242, 254, 0.1);
+    box-shadow: -5px 10px 30px rgba(0, 242, 254, 0.15);
 }
 .exp-edu { border-left: 4px solid var(--purple); }
 .exp-edu:hover {
     border-color: var(--purple);
     transform: translateX(5px);
-    box-shadow: -5px 10px 30px rgba(168, 85, 247, 0.1);
+    box-shadow: -5px 10px 30px rgba(168, 85, 247, 0.15);
 }
 
 .box-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
@@ -371,8 +406,8 @@ nav {
 .type-tag { font-size: 0.75rem; padding: 3px 8px; border-radius: 3px; font-weight: 700; }
 .type-tag.pro { background: rgba(0, 242, 254, 0.1); color: var(--cyan); border: 1px solid rgba(0, 242, 254, 0.3); }
 .type-tag.edu { background: rgba(168, 85, 247, 0.1); color: var(--purple); border: 1px solid rgba(168, 85, 247, 0.3); }
-.company { color: var(--cyan); font-size: 1rem; font-weight: 500; margin: 4px 0 10px; }
-.edu-company { color: var(--purple); }
+.company { color: var(--cyan); font-size: 1rem; font-weight: 500; margin: 4px 0 10px; text-shadow: 0 0 8px rgba(0,242,254,0.3); }
+.edu-company { color: var(--purple); text-shadow: 0 0 8px rgba(168,85,247,0.3); }
 
 /* Certifications */
 .badge { display: inline-block; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; }
@@ -388,7 +423,7 @@ nav {
     gap: 6px;
     transition: 0.2s;
 }
-.cert-link:hover { color: #fff; text-shadow: 0 0 8px var(--cyan); }
+.cert-link:hover { color: #fff; text-shadow: 0 0 10px var(--cyan); }
 
 /* Projets */
 .project-card { display: flex; flex-direction: column; }
@@ -408,7 +443,7 @@ nav {
 .btn-action:hover {
     background: var(--cyan);
     color: #000;
-    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
 }
 
 /* Bloc d'architecture pour les pages projets */
@@ -438,13 +473,13 @@ nav {
     border-radius: 10px;
     border: 1px solid var(--border-color);
     text-align: left;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
 }
 .form-group { margin-bottom: 20px; }
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 14px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 6px;
     color: #fff;
@@ -455,8 +490,8 @@ nav {
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--cyan);
-    background: rgba(0, 242, 254, 0.03);
-    box-shadow: 0 0 15px rgba(0, 242, 254, 0.1);
+    background: rgba(0, 242, 254, 0.05);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
 }
 .btn-cyan {
     background: var(--cyan);
@@ -478,7 +513,7 @@ nav {
 .btn-cyan:hover {
     background: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 242, 254, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 242, 254, 0.4);
 }
 
 .contact-buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
@@ -488,7 +523,7 @@ footer {
     text-align: center;
     padding: 40px 24px;
     border-top: 1px solid var(--border-color);
-    background: rgba(4, 7, 13, 0.85);
+    background: rgba(2, 5, 10, 0.85);
     backdrop-filter: blur(10px);
 }
 .copyright { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px; }
@@ -505,7 +540,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(4, 7, 13, 0.95);
+        background: rgba(2, 5, 10, 0.95);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--border-color);
         flex-direction: column;

@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 
     <div id="particles-js"></div>
 
     <header>
         <nav>
-            <div class="logo">> Ammar_Yilmaz<span>_</span></div>
-            <ul>
-                <li><a href="#" class="btn-home"><i class="fas fa-home"></i> ACCUEIL</a></li>
-                <li><a href="#propos">01. À PROPOS</a></li>
-                <li><a href="#experiences">02. EXPÉRIENCES</a></li>
-                <li><a href="#formations">03. FORMATIONS</a></li>
-                <li><a href="#competences">04. COMPÉTENCES</a></li>
-                <li><a href="#certifications">05. CERTIFICATIONS</a></li>
-                <li><a href="#projets">06. PROJETS</a></li>
+            <a href="#top" class="logo">> Ammar_Yilmaz<span>_</span></a>
+            <ul class="nav-links">
+                <li><a href="#top"><i class="fas fa-home icon-nav icon-home"></i> Accueil</a></li>
+                <li><a href="#propos"><i class="fas fa-user-astronaut icon-nav icon-user"></i> À propos</a></li>
+                <li><a href="#experiences"><i class="fas fa-briefcase icon-nav icon-work"></i> Expériences</a></li>
+                <li><a href="#formations"><i class="fas fa-graduation-cap icon-nav icon-edu"></i> Formations</a></li>
+                <li><a href="#competences"><i class="fas fa-cogs icon-nav icon-skills"></i> Compétences</a></li>
+                <li><a href="#certifications"><i class="fas fa-award icon-nav icon-cert"></i> Certifications</a></li>
+                <li><a href="#projets"><i class="fas fa-folder-open icon-nav icon-proj"></i> Projets</a></li>
             </ul>
             <div class="nav-actions">
                 <a href="Ammar YILMAZ cv.pdf" download class="btn-cv"><i class="fas fa-download"></i> TÉLÉCHARGER CV</a>
@@ -66,22 +66,22 @@
 
     <section id="propos" class="section">
         <div class="section-header">
-            <span class="section-num">01.</span>
+            <i class="fas fa-user-astronaut header-icon icon-user"></i>
             <h2>Mon Profil & <span class="highlight">Mes Ambitions</span></h2>
         </div>
         <div class="grid-3">
             <div class="card card-clean">
-                <div class="card-icon"><i class="fas fa-server"></i></div>
+                <div class="card-icon"><i class="fas fa-server icon-home"></i></div>
                 <h3>Infrastructures Hybrides</h3>
                 <p>Concevoir des architectures résilientes et fiables constitue le cœur de mon engagement. J'interviens sur des déploiements virtualisés on-premise et cloud interconnectés.</p>
             </div>
             <div class="card card-clean">
-                <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                <div class="card-icon"><i class="fas fa-terminal icon-user"></i></div>
                 <h3>Automatisation & IaC</h3>
                 <p>Automatiser pour fiabiliser et gagner en agilité : j'utilise Terraform, Ansible et Packer afin de standardiser les environnements et accélérer les déploiements.</p>
             </div>
             <div class="card card-clean">
-                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="card-icon"><i class="fas fa-shield-alt icon-cert"></i></div>
                 <h3>Sécurité & Supervision</h3>
                 <p>Sensibilisé aux exigences d'environnements critiques (SGDSN, ANSSI), je veille à la segmentation réseau (VLAN, IPsec, pare-feux) et au monitoring complet avec Zabbix.</p>
             </div>
@@ -90,7 +90,7 @@
 
     <section id="experiences" class="section">
         <div class="section-header">
-            <span class="section-num">02.</span>
+            <i class="fas fa-briefcase header-icon icon-work"></i>
             <h2>Expériences <span class="highlight">Professionnelles</span></h2>
         </div>
         <div class="timeline-container">
@@ -101,7 +101,7 @@
                 </div>
                 <h3>Apprenti - Chef de projets SI</h3>
                 <h4 class="company"><i class="fas fa-building"></i> ANSSI (Agence nationale de la sécurité des systèmes d'information)</h4>
-                <p>Évolution et administration de l'outil CRM, maintien en condition opérationnelle, support et formation des utilisateurs dans un environnement sécurisé.</p>
+                <p>Évolution et administration de l'outil CRM, maintien en condition opérationnelle, support et formation des utilisateurs dans un cadre sécurisé.</p>
             </div>
 
             <div class="timeline-box exp-pro">
@@ -158,8 +158,8 @@
 
     <section id="formations" class="section">
         <div class="section-header">
-            <span class="section-num">03.</span>
-            <h2>Formations & <span class="highlight" style="color: var(--purple);">Diplômes</span></h2>
+            <i class="fas fa-graduation-cap header-icon icon-edu"></i>
+            <h2>Formations & <span class="highlight-purple">Diplômes</span></h2>
         </div>
         <div class="timeline-container">
             <div class="timeline-box exp-edu">
@@ -206,47 +206,47 @@
 
     <section id="competences" class="section">
         <div class="section-header">
-            <span class="section-num">04.</span>
+            <i class="fas fa-cogs header-icon icon-skills"></i>
             <h2>Technologies & <span class="highlight">Outils</span></h2>
         </div>
         <div class="grid-2">
             <div class="card">
-                <div class="skill-category"><i class="fas fa-cloud"></i> Compute & Cloud</div>
+                <div class="skill-category"><i class="fas fa-cloud icon-home"></i> Compute & Cloud</div>
                 <ul class="skill-list">
-                    <li><i class="fas fa-chevron-right"></i> Windows Server & Active Directory</li>
-                    <li><i class="fas fa-chevron-right"></i> VMware ESXi / vSphere & Hyper-V</li>
-                    <li><i class="fas fa-chevron-right"></i> Microsoft 365, Entra ID & Microsoft Azure</li>
-                    <li><i class="fas fa-chevron-right"></i> Linux (Debian, Ubuntu Server)</li>
+                    <li><i class="fas fa-chevron-right icon-home"></i> Windows Server & Active Directory</li>
+                    <li><i class="fas fa-chevron-right icon-home"></i> VMware ESXi / vSphere & Hyper-V</li>
+                    <li><i class="fas fa-chevron-right icon-home"></i> Microsoft 365, Entra ID & Microsoft Azure</li>
+                    <li><i class="fas fa-chevron-right icon-home"></i> Linux (Debian, Ubuntu Server)</li>
                 </ul>
             </div>
 
             <div class="card">
-                <div class="skill-category"><i class="fas fa-network-wired"></i> Réseaux & SecOps</div>
+                <div class="skill-category"><i class="fas fa-network-wired icon-work"></i> Réseaux & SecOps</div>
                 <ul class="skill-list">
-                    <li><i class="fas fa-chevron-right"></i> Pare-feux & Haute Disponibilité pfSense (CARP)</li>
-                    <li><i class="fas fa-chevron-right"></i> Routage, VLANs & Tunnels IPsec / OpenVPN</li>
-                    <li><i class="fas fa-chevron-right"></i> Protocoles fondamentaux (TCP/IP, DNS, DHCP)</li>
-                    <li><i class="fas fa-chevron-right"></i> Politiques de sécurité & durcissement</li>
+                    <li><i class="fas fa-chevron-right icon-work"></i> Pare-feux & Haute Disponibilité pfSense (CARP)</li>
+                    <li><i class="fas fa-chevron-right icon-work"></i> Routage, VLANs & Tunnels IPsec / OpenVPN</li>
+                    <li><i class="fas fa-chevron-right icon-work"></i> Protocoles fondamentaux (TCP/IP, DNS, DHCP)</li>
+                    <li><i class="fas fa-chevron-right icon-work"></i> Politiques de sécurité & durcissement</li>
                 </ul>
             </div>
 
             <div class="card">
-                <div class="skill-category"><i class="fas fa-tasks"></i> Gouvernance & ITSM</div>
+                <div class="skill-category"><i class="fas fa-tasks icon-skills"></i> Gouvernance & ITSM</div>
                 <ul class="skill-list">
-                    <li><i class="fas fa-chevron-right"></i> Pilotage Agile (Scrum, Kanban, Jira)</li>
-                    <li><i class="fas fa-chevron-right"></i> Gestion des incidents & parc (GLPI)</li>
-                    <li><i class="fas fa-chevron-right"></i> Cartographie du SI & Modélisation BPMN</li>
-                    <li><i class="fas fa-chevron-right"></i> Analyse des risques EBIOS & Plan PCA/PRA</li>
+                    <li><i class="fas fa-chevron-right icon-skills"></i> Pilotage Agile (Scrum, Kanban, Jira)</li>
+                    <li><i class="fas fa-chevron-right icon-skills"></i> Gestion des incidents & parc (GLPI)</li>
+                    <li><i class="fas fa-chevron-right icon-skills"></i> Cartographie du SI & Modélisation BPMN</li>
+                    <li><i class="fas fa-chevron-right icon-skills"></i> Analyse des risques EBIOS & Plan PCA/PRA</li>
                 </ul>
             </div>
 
             <div class="card">
-                <div class="skill-category"><i class="fas fa-code-branch"></i> DevOps & Supervision</div>
+                <div class="skill-category"><i class="fas fa-code-branch icon-proj"></i> DevOps & Supervision</div>
                 <ul class="skill-list">
-                    <li><i class="fas fa-chevron-right"></i> Infrastructure as Code (Terraform, Packer)</li>
-                    <li><i class="fas fa-chevron-right"></i> Gestion de configuration (Ansible)</li>
-                    <li><i class="fas fa-chevron-right"></i> Conteneurisation & Orchestration (K3s, Docker)</li>
-                    <li><i class="fas fa-chevron-right"></i> Monitoring & Alerting (Zabbix)</li>
+                    <li><i class="fas fa-chevron-right icon-proj"></i> Infrastructure as Code (Terraform, Packer)</li>
+                    <li><i class="fas fa-chevron-right icon-proj"></i> Gestion de configuration (Ansible)</li>
+                    <li><i class="fas fa-chevron-right icon-proj"></i> Conteneurisation & Orchestration (K3s, Docker)</li>
+                    <li><i class="fas fa-chevron-right icon-proj"></i> Monitoring & Alerting (Zabbix)</li>
                 </ul>
             </div>
         </div>
@@ -254,7 +254,7 @@
 
     <section id="certifications" class="section">
         <div class="section-header">
-            <span class="section-num">05.</span>
+            <i class="fas fa-award header-icon icon-cert"></i>
             <h2>Certifications <span class="highlight">Obtenues</span></h2>
         </div>
         <div class="grid-4">
@@ -287,7 +287,7 @@
 
     <section id="projets" class="section">
         <div class="section-header">
-            <span class="section-num">06.</span>
+            <i class="fas fa-folder-open header-icon icon-proj"></i>
             <h2>Réalisations <span class="highlight">Techniques</span></h2>
         </div>
         <div class="grid-3">
@@ -322,10 +322,10 @@
 
         <div class="contact-buttons">
             <a href="mailto:yilmazammar78@gmail.com" class="btn-pill btn-dark">
-                <i class="fas fa-envelope" style="color: #00f2fe;"></i> Me contacter par mail
+                <i class="fas fa-envelope icon-home"></i> Me contacter par mail
             </a>
             <a href="https://www.linkedin.com/in/ammar-yilmaz" target="_blank" class="btn-pill btn-dark">
-                <i class="fab fa-linkedin" style="color: #00a8ff;"></i> Profil LinkedIn
+                <i class="fab fa-linkedin icon-work"></i> Profil LinkedIn
             </a>
             <a href="Ammar YILMAZ cv.pdf" download class="btn-pill btn-white">
                 <i class="fas fa-download"></i> Télécharger le CV (PDF)

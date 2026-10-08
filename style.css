@@ -78,7 +78,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 28px;
+    gap: 25px;
+    align-items: center;
 }
 
 nav ul li a {
@@ -91,6 +92,24 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--cyan);
+}
+
+/* Nouveau Bouton Accueil dans le menu */
+nav ul li a.btn-home {
+    border: 1px solid var(--cyan);
+    color: var(--cyan);
+    background: rgba(0, 242, 254, 0.05);
+    padding: 6px 18px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul li a.btn-home:hover {
+    background: var(--cyan);
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
 }
 
 .btn-cv {
@@ -245,7 +264,7 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 10px;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--cyan);
 }
 
@@ -414,189 +433,4 @@ nav ul li a:hover {
 
 .exp-pro:hover {
     border-color: var(--cyan);
-    box-shadow: 0 4px 20px rgba(0, 242, 254, 0.08);
-}
-
-/* Style Formation : Bordure Gauche Violette */
-.exp-edu {
-    border-left: 4px solid var(--purple);
-}
-
-.exp-edu:hover {
-    border-color: var(--purple);
-    box-shadow: 0 4px 20px rgba(168, 85, 247, 0.08);
-}
-
-.box-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.date-tag {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
-.type-tag {
-    font-size: 0.75rem;
-    padding: 3px 8px;
-    border-radius: 3px;
-    font-weight: 700;
-}
-
-.type-tag.pro {
-    background: rgba(0, 242, 254, 0.1);
-    color: var(--cyan);
-    border: 1px solid rgba(0, 242, 254, 0.3);
-}
-
-.type-tag.edu {
-    background: rgba(168, 85, 247, 0.1);
-    color: var(--purple);
-    border: 1px solid rgba(168, 85, 247, 0.3);
-}
-
-.company {
-    color: var(--cyan);
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 4px 0 10px;
-}
-
-.edu-company {
-    color: var(--purple);
-}
-
-.edu-sublist {
-    list-style: none;
-    margin-top: 10px;
-}
-
-.edu-sublist li {
-    color: var(--text-muted);
-    font-size: 0.92rem;
-    margin-bottom: 6px;
-}
-
-/* Projets */
-.project-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card p {
-    flex-grow: 1;
-    margin-bottom: 20px;
-}
-
-.btn-action {
-    display: block;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid rgba(0, 242, 254, 0.3);
-    color: var(--cyan);
-    text-decoration: none;
-    border-radius: 6px;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
-    transition: 0.25s;
-}
-
-.btn-action:hover {
-    background: rgba(0, 242, 254, 0.1);
-    border-color: var(--cyan);
-}
-
-/* Contact & Footer sobre */
-.contact-section {
-    text-align: center;
-    padding: 80px 24px 60px;
-    max-width: 800px;
-    margin: auto;
-}
-
-.contact-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    margin-bottom: 12px;
-}
-
-.contact-desc {
-    color: var(--text-muted);
-    font-size: 1.05rem;
-    margin-bottom: 30px;
-}
-
-.contact-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
-footer {
-    text-align: center;
-    padding: 40px 24px;
-    border-top: 1px solid var(--border-color);
-    background: rgba(6, 9, 16, 0.95);
-}
-
-.copyright {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    margin-bottom: 16px;
-}
-
-.badges-row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 16px;
-    flex-wrap: wrap;
-}
-
-.footer-links {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-.sec-link {
-    color: var(--cyan);
-    text-decoration: underline;
-}
-
-.cookie-link {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: 600;
-    margin-left: 6px;
-}
-
-/* Responsive */
-@media (max-width: 960px) {
-    .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        margin-top: 100px;
-    }
-    .hero-actions {
-        justify-content: center;
-    }
-    .grid-3, .grid-4 {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-    nav ul {
-        display: none;
-    }
-    .hero-title {
-        font-size: 2.6rem;
-    }
-    .contact-title {
-        font-size: 2.2rem;
-    }
-}
+    box-shadow: 0

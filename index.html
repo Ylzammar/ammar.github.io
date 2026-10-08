@@ -4,9 +4,25 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https: https://img.shields.io;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Balises Open Graph (LinkedIn, Discord, WhatsApp...) -->
+    <meta property="og:title" content="Ammar YILMAZ - Ingénieur Réseaux & Systèmes">
+    <meta property="og:description" content="Découvrez mon portfolio : infrastructures hybrides, DevOps, automatisation (IaC) et cybersécurité.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ylzammar.github.io/">
+    <meta property="og:image" content="https://ylzammar.github.io/IMG_9948.jpg">
+
+    <!-- Balises Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ammar YILMAZ - Ingénieur Réseaux & Systèmes">
+    <meta name="twitter:description" content="Découvrez mon portfolio : infrastructures hybrides, DevOps, automatisation (IaC) et cybersécurité.">
+    <meta name="twitter:image" content="https://ylzammar.github.io/IMG_9948.jpg">
+
     <title>Ammar YILMAZ - Ingénieur Réseaux & Systèmes</title>
     
+    <!-- Polices -->
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,14 +30,17 @@
 
     <div id="particles-js"></div>
 
+    <!-- Navigation avec Menu Hamburger Mobile -->
     <header>
         <nav>
             <a href="#top" class="logo">> Ammar_Yilmaz<span>_</span></a>
             
+            <!-- Bouton Hamburger -->
             <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
                 <i class="fas fa-bars"></i>
             </button>
 
+            <!-- Liens de navigation -->
             <ul class="nav-links" id="nav-links">
                 <li><a href="#top"><i class="fas fa-home icon-nav icon-home"></i> Accueil</a></li>
                 <li><a href="#propos"><i class="fas fa-user-astronaut icon-nav icon-user"></i> À propos</a></li>
@@ -38,6 +57,7 @@
         </nav>
     </header>
 
+    <!-- Section Héro -->
     <section class="hero reveal">
         <div class="hero-left">
             <div class="status-badge">
@@ -69,6 +89,7 @@
         </div>
     </section>
 
+    <!-- 01. À PROPOS -->
     <section id="propos" class="section reveal">
         <div class="section-header">
             <i class="fas fa-user-astronaut header-icon icon-user"></i>
@@ -93,12 +114,14 @@
         </div>
     </section>
 
+    <!-- 02. EXPÉRIENCES PROFESSIONNELLES -->
     <section id="experiences" class="section reveal">
         <div class="section-header">
             <i class="fas fa-briefcase header-icon icon-work"></i>
             <h2>Expériences <span class="highlight">Professionnelles</span></h2>
         </div>
         <div class="timeline-container">
+            <!-- ANSSI -->
             <div class="timeline-box exp-pro reveal">
                 <div class="box-header">
                     <span class="date-tag">MARS 2026 — OCT. 2026</span>
@@ -109,6 +132,7 @@
                 <p>Évolution et administration de l'outil CRM, maintien en condition opérationnelle, support et formation des utilisateurs dans un cadre sécurisé.</p>
             </div>
 
+            <!-- SGDSN -->
             <div class="timeline-box exp-pro reveal">
                 <div class="box-header">
                     <span class="date-tag">SEPT. 2024 — MARS 2026</span>
@@ -119,6 +143,7 @@
                 <p>Analyse et recueil des besoins, cartographie du SI existant, qualification logicielle, rédaction de spécifications techniques et suivi de projets d'exploitation.</p>
             </div>
 
+            <!-- Institut Pasteur -->
             <div class="timeline-box exp-pro reveal">
                 <div class="box-header">
                     <span class="date-tag">MARS 2024 — JUIL. 2024</span>
@@ -129,6 +154,7 @@
                 <p>Déploiement logiciel, masterisation, installation et configuration des postes utilisateurs et équipements réseau, exécution des tests de bon fonctionnement.</p>
             </div>
 
+            <!-- EDF -->
             <div class="timeline-box exp-pro reveal">
                 <div class="box-header">
                     <span class="date-tag">FÉVR. 2024 — MARS 2024</span>
@@ -139,6 +165,7 @@
                 <p>Assistance technique et support de niveau 1 auprès des collaborateurs, maintenance et dépannage matériel et applicatif.</p>
             </div>
 
+            <!-- Assemblée Nationale -->
             <div class="timeline-box exp-pro reveal">
                 <div class="box-header">
                     <span class="date-tag">JUIN 2023 — AOÛT 2023</span>
@@ -149,6 +176,7 @@
                 <p>Installation, configuration, brassage réseau et dépannage des postes de travail. Assistance support de proximité aux utilisateurs.</p>
             </div>
 
+            <!-- Sopra Steria -->
             <div class="timeline-box exp-pro reveal">
                 <div class="box-header">
                     <span class="date-tag">JUIL. 2022 — AOÛT 2022</span>
@@ -161,6 +189,7 @@
         </div>
     </section>
 
+    <!-- 03. FORMATIONS & DIPLÔMES -->
     <section id="formations" class="section reveal">
         <div class="section-header">
             <i class="fas fa-graduation-cap header-icon icon-edu"></i>
@@ -209,6 +238,7 @@
         </div>
     </section>
 
+    <!-- 04. COMPÉTENCES -->
     <section id="competences" class="section reveal">
         <div class="section-header">
             <i class="fas fa-cogs header-icon icon-skills"></i>
@@ -257,6 +287,7 @@
         </div>
     </section>
 
+    <!-- 05. CERTIFICATIONS -->
     <section id="certifications" class="section reveal">
         <div class="section-header">
             <i class="fas fa-award header-icon icon-cert"></i>
@@ -290,6 +321,7 @@
         </div>
     </section>
 
+    <!-- 06. PROJETS -->
     <section id="projets" class="section reveal">
         <div class="section-header">
             <i class="fas fa-folder-open header-icon icon-proj"></i>
@@ -319,6 +351,7 @@
         </div>
     </section>
 
+    <!-- Contact & Footer -->
     <section class="contact-section reveal">
         <h2 class="contact-title">Initialiser l'intégration<span class="highlight">.</span></h2>
         <p class="contact-desc">
@@ -354,6 +387,7 @@
         </p>
     </footer>
 
+    <!-- Scripts Javascript -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
